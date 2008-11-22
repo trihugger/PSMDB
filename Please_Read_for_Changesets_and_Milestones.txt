@@ -1,0 +1,25 @@
+PROJECT SILVERMOON MANGOS DATABASE
+
+Home Page: http://project-silvermoon.net/
+SVN: http://svn2.assembla.com/svn/PSDB/
+Single SQL Path : http://svn2.assembla.com/svn/PSDB/Development/database
+Milestones & Changesets Path : http://svn.assembla.com/svn/PSDBM/
+
+ For Changesets & Milestones, we have moved all of those too our secondary
+svn, which can be located at :
+
+http://svn.assembla.com/svn/PSDBM/
+
+ The reason : we want our main svn to house the single sql files & .bat
+importer tool, as this is the proper use of a true svn, we feel that full releases
+are "extras". 
+
+ As for changesets, we know these are a vital part of updating an existing database, 
+and we will continue with those as well.
+
+ Also, the old svn setup was over 300+ megs, which was way to much for a download,
+this allows us too manage the svn better.
+
+ Thank you - Imperium 
+
+ ~Project Silvermoon Staff
