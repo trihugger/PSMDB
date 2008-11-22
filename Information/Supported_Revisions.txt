@@ -4,5 +4,5 @@ THIS IS A "USE AT YOUR OWN RISK" BRANCH, UNTIL MANGOS OFFICIALLY SUPPORTS IT...
 MaNGOS: r295_6818_20081111_Mangos_303_WotLK.rar
 Download: http://project-silvermoon.net/index.php?showtopic=77
 
-Scriptdev2: r740
+Scriptdev2: r735
 Acid: 0.0.5 r22

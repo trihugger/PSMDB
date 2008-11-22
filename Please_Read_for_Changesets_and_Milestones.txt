@@ -3,9 +3,9 @@ PROJECT SILVERMOON MANGOS DATABASE
 THIS IS A "USE AT YOUR OWN RISK" BRANCH, UNTIL MANGOS OFFICIALLY SUPPORTS IT...
 
 Home Page: http://project-silvermoon.net/
-SVN: http://svn2.assembla.com/svn/PSDB/
-Single SQL Path : http://svn2.assembla.com/svn/PSDB/Development/database
-Milestones & Changesets Path : http://svn.assembla.com/svn/PSDBM/
+SVN: http://svn.assembla.com/svn/psmdb_wotlk
+Single SQL Path : http://svn.assembla.com/svn/psmdb_wotlk/Development/database
+Milestones & Changesets Path : http://svn.assembla.com/svn/psmdb_wotlk
 
  For Changesets & Milestones, we have moved all of those too our secondary
 svn, which can be located at :
