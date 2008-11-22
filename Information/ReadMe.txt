@@ -14,4 +14,5 @@ Rog360      - Project Leader
 SADraco     - Database Team
 BrainDedd   - Database Team
 Kicho       - Database Team
+GrieVelorn  - Database Team
 Rilex       - Bug Tracker Officer
