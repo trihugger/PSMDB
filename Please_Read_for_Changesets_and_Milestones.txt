@@ -6,20 +6,21 @@ Home Page: http://project-silvermoon.net/
 SVN: http://svn.assembla.com/svn/psmdb_wotlk
 Single SQL Path : http://svn.assembla.com/svn/psmdb_wotlk/Development/database
 Milestones & Changesets Path : http://svn.assembla.com/svn/psmdb_wotlk
+Server Binaries: http://project-silvermoon.net/index.php?showtopic=77
 
- For Changesets & Milestones, we have moved all of those too our secondary
+For Changesets & Milestones, we have moved all of those too our secondary
 svn, which can be located at :
 
 http://svn.assembla.com/svn/PSDBM/
 
- The reason : we want our main svn to house the single sql files & .bat
+The reason : we want our main svn to house the single sql files & .bat
 importer tool, as this is the proper use of a true svn, we feel that full releases
 are "extras". 
 
- As for changesets, we know these are a vital part of updating an existing database, 
+As for changesets, we know these are a vital part of updating an existing database, 
 and we will continue with those as well.
 
- Also, the old svn setup was over 300+ megs, which was way to much for a download,
+Also, the old svn setup was over 300+ megs, which was way to much for a download,
 this allows us too manage the svn better.
 
  Thank you - Imperium 

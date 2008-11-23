@@ -1,0 +1,3 @@
+THIS IS A "USE AT YOUR OWN RISK" BRANCH, UNTIL MANGOS OFFICIALLY SUPPORTS IT...
+
+Get the binaries here: http://project-silvermoon.net/index.php?showtopic=77
