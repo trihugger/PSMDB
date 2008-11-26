@@ -1,0 +1,378 @@
+Add to db after update to Core 11-18-2008. Just a Remender for Developers to add fixes that have been added to 2.4.3 svn. To keep from having to do them twice...
+
+
+
+
+UPDATE `creature_movement` SET `textid1`='2000005000' WHERE (`id`='6177') AND (`point`='29');
+DELETE FROM db_script_string Where entry = 2000005000;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005000','Fizzles used to be a great wizard. But got turned into a rabbit when one of his spells went bad.');
+
+UPDATE `creature_movement` SET `textid1`='2000005001' WHERE (`id`='6186') AND (`point`='28');
+DELETE FROM db_script_string Where entry = 2000005001;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005001','Hello, Charys. I have my list, could you get me all of that, especially the last ingredient.');
+
+UPDATE `creature_movement` SET `textid1`='2000005002' WHERE (`id`='6186') AND (`point`='29');
+DELETE FROM db_script_string Where entry = 2000005002;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005002','Sure Paige. Just be gentle.');
+
+UPDATE `creature_movement` SET `textid1`='2000005003' WHERE (`id`='6186') AND (`point`='30');
+DELETE FROM db_script_string Where entry = 2000005003;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005003','Thanks, Charys. C\'mon Paige, sweetie.');
+
+UPDATE `creature_movement` SET `textid1`='2000005004' WHERE (`id`='6190') AND (`point`='29');
+DELETE FROM db_script_string Where entry = 2000005004;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005004','Mommy? Can I pet Fizzles?');
+
+UPDATE `creature_movement` SET `textid1`='2000005005' WHERE (`id`='6299') AND (`point`='16');
+DELETE FROM db_script_string Where entry = 2000005005;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005005','I can\'t believe dad won\'t let me keep your sister.');
+
+UPDATE `creature_movement` SET `textid1`='2000005006' WHERE (`id`='6299') AND (`point`='8');
+DELETE FROM db_script_string Where entry = 2000005006;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005006','Kitten for sale, looking for a good home.');
+
+UPDATE `creature_movement` SET `textid1`='2000005007' WHERE (`id`='6299') AND (`point`='24');
+DELETE FROM db_script_string Where entry = 2000005007;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005007','Can anyone give my adorable, extra little kitty a home?');
+
+UPDATE `creature_movement` SET `textid1`='2000005008' WHERE (`id`='6299') AND (`point`='30');
+DELETE FROM db_script_string Where entry = 2000005008;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005008','What does allergic mean anyway? And what does it have to do with either of my kitties?');
+
+UPDATE `creature_movement` SET `textid1`='2000005009' WHERE (`id`='6299') AND (`point`='39');
+DELETE FROM db_script_string Where entry = 2000005009;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005009','Will someone please give my little kitten a good home?');
+
+UPDATE `creature_movement` SET `textid1`='2000005010' WHERE (`id`='6299') AND (`point`='46');
+DELETE FROM db_script_string Where entry = 2000005010;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005010','Don\'t worry, I\'ll find a good home for ya.');
+
+UPDATE `creature_movement` SET `textid1`='2000005011' WHERE (`id`='6300') AND (`point`='4');
+DELETE FROM db_script_string Where entry = 2000005011;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005011','Jack and Jill my wrinkled patoot! I do all the water luggin round here.');
+
+UPDATE `creature_movement` SET `textid1`='2000005012' WHERE (`id`='6300') AND (`point`='7');
+DELETE FROM db_script_string Where entry = 2000005012;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005012','Where\'s the water Emma? Get the water Emma? Ifn it werent fer me that lot wouldn\'t know what water looks like.');
+
+UPDATE `creature_movement` SET `textid1`='2000005013' WHERE (`id`='6300') AND (`point`='11');
+DELETE FROM db_script_string Where entry = 2000005013;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005013','Of course Im talking to myself. Only way to get a decent conversation in this city.');
+
+UPDATE `creature_movement` SET `textid1`='2000005014' WHERE (`id`='6300') AND (`point`='17');
+DELETE FROM db_script_string Where entry = 2000005014;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005014','Seems like a hundred times a day I walk all the way to get more water. No respect for their elders I tell ya.');
+
+UPDATE `creature_movement` SET `textid1`='2000005015' WHERE (`id`='6300') AND (`point`='19');
+DELETE FROM db_script_string Where entry = 2000005015;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005015','Deja vu. For a moment I thought I was back home... before the plague...');
+
+UPDATE `creature_movement` SET `textid1`='2000005016' WHERE (`id`='8458') AND (`point`='2');
+DELETE FROM db_script_string Where entry = 2000005016;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005016','Come here Fluffy!');
+
+UPDATE `creature_movement` SET `textid1`='2000005017' WHERE (`id`='9411') AND (`point`='15');
+DELETE FROM db_script_string Where entry = 2000005017;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005017','Please Keep Darnassus Clean.');
+
+UPDATE `creature_movement` SET `textid1`='2000005018' WHERE (`id`='9411') AND (`point`='30');
+DELETE FROM db_script_string Where entry = 2000005018;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005018','Litter Bugs pay a stiff fine.');
+
+UPDATE `creature_movement` SET `textid1`='2000005019' WHERE (`id`='9411') AND (`point`='45');
+DELETE FROM db_script_string Where entry = 2000005019;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005019','Recycle to keep Mother Earth clean.');
+
+UPDATE `creature_movement` SET `textid1`='2000005020' WHERE (`id`='9591') AND (`point`='16');
+DELETE FROM db_script_string Where entry = 2000005020;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005020','Poor Dorius. If I ever get my hands on those Dark Irons, so help me...');
+
+UPDATE `creature_movement` SET `textid1`='2000005021' WHERE (`id`='24836') AND (`point`='2');
+DELETE FROM db_script_string Where entry = 2000005021;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005021','I WIN!!!!!');
+
+UPDATE `creature_movement` SET `textid1`='2000005022' WHERE (`id`='24837') AND (`point`='2');
+DELETE FROM db_script_string Where entry = 2000005022;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005022','Dang it!!!');
+
+UPDATE `creature_movement` SET `textid1`='2000005023' WHERE (`id`='31008') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005023;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005023','ANYONE DARE CHALLENGE ME!');
+
+UPDATE `creature_movement` SET `textid1`='2000005024' WHERE (`id`='31008') AND (`point`='2');
+DELETE FROM db_script_string Where entry = 2000005024;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005024','YA BUNCH OF COWARDS!');
+
+UPDATE `creature_movement` SET `textid1`='2000005025' WHERE (`id`='31008') AND (`point`='3');
+DELETE FROM db_script_string Where entry = 2000005025;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005025','NO RISING WARRIORS IN THIS GROUP!');
+
+UPDATE `creature_movement` SET `textid1`='2000005026' WHERE (`id`='55140') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005026;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005026','Welcome to Shattrath City.');
+
+UPDATE `creature_movement` SET `textid1`='2000005027' WHERE (`id`='55140') AND (`point`='6');
+DELETE FROM db_script_string Where entry = 2000005027;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005027','You Seek Guidance?');
+
+UPDATE `creature_movement` SET `textid1`='2000005028' WHERE (`id`='64716') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005028;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005028','Who Dares Bother ME...I will have your Head.');
+
+UPDATE `creature_movement` SET `textid1`='2000005029' WHERE (`id`='65430') AND (`point`='4');
+DELETE FROM db_script_string Where entry = 2000005029;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005029','Welcome to our fair city!');
+
+UPDATE `creature_movement` SET `textid1`='2000005030' WHERE (`id`='65431') AND (`point`='3');
+DELETE FROM db_script_string Where entry = 2000005030;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005030','Please help keep our city clean..');
+
+UPDATE `creature_movement` SET `textid1`='2000005031' WHERE (`id`='69035') AND (`point`='2');
+DELETE FROM db_script_string Where entry = 2000005031;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005031','Aye, that\'ll do it! They\'ll come runnin\' once they see the reward we\'ve put up!');
+
+UPDATE `creature_movement` SET `textid1`='2000005032' WHERE (`id`='69263') AND (`point`='4');
+UPDATE `creature_movement` SET `textid3`='2000005033' WHERE (`id`='69263') AND (`point`='4');
+DELETE FROM db_script_string Where entry = 2000005032;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005032','I FEEL DEATH ALONGSIDE!');
+DELETE FROM db_script_string Where entry = 2000005033;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005033','FEEL MY POWER!');
+
+UPDATE `creature_movement` SET `textid2`='2000005034' WHERE (`id`='69263') AND (`point`='3');
+UPDATE `creature_movement` SET `textid5`='2000005035' WHERE (`id`='69263') AND (`point`='3');
+DELETE FROM db_script_string Where entry = 2000005034;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005034','NEXT TIME YOU WILL DIE!');
+DELETE FROM db_script_string Where entry = 2000005035;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005035','YOU PRAY SERVANTS MY!');
+
+UPDATE `creature_movement` SET `textid1`='2000005036' WHERE (`id`='69263') AND (`point`='2');
+UPDATE `creature_movement` SET `textid3`='2000005037' WHERE (`id`='69263') AND (`point`='2');
+DELETE FROM db_script_string Where entry = 2000005036;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005036','TRY TO KILL ME LOLS!');
+DELETE FROM db_script_string Where entry = 2000005037;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005037','US ALREADY ALL ANYMORE AND ANYMORE!');
+
+UPDATE `creature_movement` SET `textid1`='2000005038' WHERE (`id`='73144') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005038;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005038','Trainees! Keep practicing your Kick Procedure. It will be very useful to you in the cruel world outside these walls.');
+
+UPDATE `creature_movement` SET `textid1`='2000005039' WHERE (`id`='73951') AND (`point`='3');
+DELETE FROM db_script_string Where entry = 2000005039;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005039','Heavy work this is...');
+
+UPDATE `creature_movement` SET `textid1`='2000005040' WHERE (`id`='77321') AND (`point`='1');
+UPDATE `creature_movement` SET `textid2`='2000005041' WHERE (`id`='77321') AND (`point`='1');
+UPDATE `creature_movement` SET `textid4`='2000005042' WHERE (`id`='77321') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005040;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005040','I AM A GOD OF DEMONS!');
+DELETE FROM db_script_string Where entry = 2000005041;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005041','I WILL TAKE ALL LIFES!');
+DELETE FROM db_script_string Where entry = 2000005042;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005042','I WILL DESTROY YOU ALL!');
+
+UPDATE `creature_movement` SET `textid1`='2000005043' WHERE (`id`='77321') AND (`point`='2');
+UPDATE `creature_movement` SET `textid4`='2000005044' WHERE (`id`='77321') AND (`point`='2');
+DELETE FROM db_script_string Where entry = 2000005043;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005043','WHERE MY FORCES OF DEMONS!');
+DELETE FROM db_script_string Where entry = 2000005044;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005044','NOBODY WILL GET THROUGH ME!');
+
+UPDATE `creature_movement` SET `textid2`='2000005045' WHERE (`id`='77321') AND (`point`='3');
+UPDATE `creature_movement` SET `textid5`='2000005046' WHERE (`id`='77321') AND (`point`='3');
+DELETE FROM db_script_string Where entry = 2000005045;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005045','I FEEL THE FRIED MEAT!');
+DELETE FROM db_script_string Where entry = 2000005046;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005046','I WILL DESTROY YOU ALL!');
+
+UPDATE `creature_movement` SET `textid2`='2000005047' WHERE (`id`='77324') AND (`point`='1');
+UPDATE `creature_movement` SET `textid4`='2000005048' WHERE (`id`='77324') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005047;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005047','YOU PRAY SERVANTS MY!');
+DELETE FROM db_script_string Where entry = 2000005048;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005048','NOBODY WILL GET THROUGH ME!');
+
+UPDATE `creature_movement` SET `textid1`='2000005049' WHERE (`id`='77324') AND (`point`='2');
+UPDATE `creature_movement` SET `textid3`='2000005050' WHERE (`id`='77324') AND (`point`='2');
+UPDATE `creature_movement` SET `textid5`='2000005051' WHERE (`id`='77324') AND (`point`='2');
+DELETE FROM db_script_string Where entry = 2000005049;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005049','I WILL DESTROY ALL!');
+DELETE FROM db_script_string Where entry = 2000005050;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005050','I WICKED OGRE!');
+DELETE FROM db_script_string Where entry = 2000005051;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005051','I FEEL DEATH ALONGSIDE!');
+
+UPDATE `creature_movement` SET `textid1`='2000005052' WHERE (`id`='77324') AND (`point`='3');
+UPDATE `creature_movement` SET `textid3`='2000005053' WHERE (`id`='77324') AND (`point`='3');
+DELETE FROM db_script_string Where entry = 2000005052;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005052','US ALREADY ALL ANYMORE AND ANYMORE!');
+DELETE FROM db_script_string Where entry = 2000005053;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005053','I FEEL DEATH ALONGSIDE!');
+
+UPDATE `creature_movement` SET `textid1`='2000005054' WHERE (`id`='79840') AND (`point`='2');
+DELETE FROM db_script_string Where entry = 2000005054;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005054','There have been some complaints filed against this... Individual. I\'m told he\'s something of a shady character. I am here to determine whether or not this business of his is legitimate... and take action if it proves otherwise.');
+
+UPDATE `creature_movement` SET `textid1`='2000005055' WHERE (`id`='84008') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005055;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005055','Welcome to Shattrath City.');
+
+UPDATE `creature_movement` SET `textid1`='2000005056' WHERE (`id`='84008') AND (`point`='5');
+DELETE FROM db_script_string Where entry = 2000005056;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005056','You Seek Guidance?');
+
+UPDATE `creature_movement` SET `textid1`='2000005057' WHERE (`id`='90122') AND (`point`='2');
+DELETE FROM db_script_string Where entry = 2000005057;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005057','I need to get this right, So watch your self !!!!');
+
+UPDATE `creature_movement` SET `textid1`='2000005058' WHERE (`id`='90221') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005058;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005058','No One May Pass!');
+
+UPDATE `creature_movement` SET `textid1`='2000005059' WHERE (`id`='90894') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005059;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005059','I need to get this right, So watch your self !!!!');
+
+UPDATE `creature_movement` SET `textid1`='2000005060' WHERE (`id`='91414') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005060;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005060','I need to get this right, So watch your self !!!!');
+
+UPDATE `creature_movement` SET `textid1`='2000005061' WHERE (`id`='93940') AND (`point`='5');
+DELETE FROM db_script_string Where entry = 2000005061;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005061','Troops! Fall out!');
+
+UPDATE `creature_movement` SET `textid1`='2000005062' WHERE (`id`='93940') AND (`point`='6');
+DELETE FROM db_script_string Where entry = 2000005062;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005062','The techniques he has suggested have been most effective in preparing the troops.');
+
+UPDATE `creature_movement` SET `textid1`='2000005063' WHERE (`id`='93940') AND (`point`='7');
+DELETE FROM db_script_string Where entry = 2000005063;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005063','By your leave, High Exarch, I must prepare the next troops for your review.');
+
+UPDATE `creature_movement` SET `textid1`='2000005064' WHERE (`id`='93940') AND (`point`='4');
+DELETE FROM db_script_string Where entry = 2000005064;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005064','Your training is now complete. You each have your assignments. May the Light guide you.');
+
+UPDATE `creature_movement` SET `textid1`='2000005065' WHERE (`id`='93940') AND (`point`='3');
+DELETE FROM db_script_string Where entry = 2000005065;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005065','Listen up Men!');
+
+UPDATE `creature_movement` SET `textid1`='2000005066' WHERE (`id`='93944') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005066;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005066','I need to get this right, So watch your self !!!!');
+
+UPDATE `creature_movement` SET `textid1`='2000005067' WHERE (`id`='94120') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005067;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005067','Brashly you have attacked my children, Illidan!');
+
+UPDATE `creature_movement` SET `textid1`='2000005068' WHERE (`id`='94120') AND (`point`='2');
+DELETE FROM db_script_string Where entry = 2000005068;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005068','The pact is broken. Giant will never side with elf! NEVER!');
+
+UPDATE `creature_movement` SET `textid1`='2000005069' WHERE (`id`='94120') AND (`point`='3');
+DELETE FROM db_script_string Where entry = 2000005069;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005069','Behemothon, King of the Colossi roars in defiance.');
+
+UPDATE `creature_movement` SET `textid1`='2000005070' WHERE (`id`='98105') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005070;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005070','I need to get this right, So watch your self !!!!');
+
+UPDATE `creature_movement` SET `textid1`='2000005071' WHERE (`id`='99928') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005071;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005071','Practice makes Perfect!');
+
+UPDATE `creature_movement` SET `textid1`='2000005072' WHERE (`id`='100016') AND (`point`='1');
+UPDATE `creature_movement` SET `textid2`='2000005073' WHERE (`id`='100016') AND (`point`='1');
+UPDATE `creature_movement` SET `textid3`='2000005074' WHERE (`id`='100016') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005072;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005072','Skarr the Unbreakable is in the arena! The Unbreakable is here now !');
+DELETE FROM db_script_string Where entry = 2000005073;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005073','Fight with Skarr !');
+DELETE FROM db_script_string Where entry = 2000005074;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005074','You will die or you will have tried ...');
+
+UPDATE `creature_movement` SET `textid1`='2000005075' WHERE (`id`='100019') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005075;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005075','Mushgog is in the arena! Mushgog is here now !');
+
+UPDATE `creature_movement` SET `textid1`='2000005076' WHERE (`id`='100019') AND (`point`='3');
+DELETE FROM db_script_string Where entry = 2000005076;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005076','Fight with Mushgog ! ');
+
+UPDATE `creature_movement` SET `textid1`='2000005077' WHERE (`id`='100019') AND (`point`='5');
+DELETE FROM db_script_string Where entry = 2000005077;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005077','You will die or you will have tried ...');
+
+UPDATE `creature_movement` SET `textid1`='2000005078' WHERE (`id`='100021') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005078;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005078','Razza is in the arena! Razza is here now !');
+
+UPDATE `creature_movement` SET `textid1`='2000005079' WHERE (`id`='100021') AND (`point`='3');
+DELETE FROM db_script_string Where entry = 2000005079;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005079','Fight with Razza !');
+
+UPDATE `creature_movement` SET `textid1`='2000005080' WHERE (`id`='100021') AND (`point`='5');
+DELETE FROM db_script_string Where entry = 2000005080;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005080','You will die or you will have tried ...');
+
+UPDATE `creature_movement` SET `textid1`='2000005081' WHERE (`id`='120498') AND (`point`='5');
+DELETE FROM db_script_string Where entry = 2000005081;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005081','Half Done!');
+
+UPDATE `creature_movement` SET `textid1`='2000005082' WHERE (`id`='120498') AND (`point`='10');
+DELETE FROM db_script_string Where entry = 2000005082;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005082','Almost done with this side.');
+
+UPDATE `creature_movement` SET `textid1`='2000005083' WHERE (`id`='120499') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005083;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005083','They sure screwed up this bridge..');
+
+UPDATE `creature_movement` SET `textid1`='2000005084' WHERE (`id`='120499') AND (`point`='5');
+DELETE FROM db_script_string Where entry = 2000005084;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005084','Daniel is a good worker!');
+
+UPDATE `creature_movement` SET `textid1`='2000005085' WHERE (`id`='120499') AND (`point`='10');
+DELETE FROM db_script_string Where entry = 2000005085;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005085','Man! I will never beat him.');
+
+UPDATE `creature_movement` SET `textid1`='2000005086' WHERE (`id`='120500') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005086;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005086','Great Work!');
+
+UPDATE `creature_movement` SET `textid1`='2000005087' WHERE (`id`='120500') AND (`point`='3');
+DELETE FROM db_script_string Where entry = 2000005087;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005087','Your doing great!');
+
+UPDATE `creature_movement` SET `textid1`='2000005088' WHERE (`id`='125545') AND (`point`='1');
+DELETE FROM db_script_string Where entry = 2000005088;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005088','Ahh, my precious Ameenah! How wonderful to see you again.');
+
+UPDATE `creature_movement` SET `textid1`='2000005089' WHERE (`id`='125545') AND (`point`='2');
+DELETE FROM db_script_string Where entry = 2000005089;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005089','Yer wearin down, princess, I can sense it!');
+
+UPDATE `creature_movement` SET `textid1`='2000005090' WHERE (`id`='125545') AND (`point`='3');
+DELETE FROM db_script_string Where entry = 2000005090;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005090','Hmm, don\'t mind if I do!');
+
+UPDATE `creature_movement` SET `textid1`='2000005091' WHERE (`id`='125550') AND (`point`='2');
+DELETE FROM db_script_string Where entry = 2000005091;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005091','Beat it, Mack! Else I\'ll have Budd cook ya fer my hounds...');
+
+UPDATE `creature_movement` SET `textid1`='2000005092' WHERE (`id`='126476') AND (`point`='2');
+DELETE FROM db_script_string Where entry = 2000005092;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005092','I\'ll never stop. Never...');
+
+UPDATE `creature_movement` SET `textid1`='2000005093' WHERE (`id`='131112') AND (`point`='6');
+UPDATE `creature_movement` SET `textid2`='2000005094' WHERE (`id`='131112') AND (`point`='6');
+DELETE FROM db_script_string Where entry = 2000005093;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005093','It\'s getting away!');
+DELETE FROM db_script_string Where entry = 2000005094;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005094','Hey, someone help me catch this thing!');
+
+UPDATE `creature_movement` SET `textid1`='2000005095' WHERE (`id`='131203') AND (`point`='2');
+DELETE FROM db_script_string Where entry = 2000005095;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005095','THE KING WILL HAVE OUR HEADS, IF WE FALL BEHIND!');
+
+UPDATE `creature_movement` SET `textid1`='2000005096' WHERE (`id`='6300') AND (`point`='14');
+DELETE FROM db_script_string Where entry = 2000005096;
+INSERT INTO `db_script_string` (`entry`,`content_default`) VALUES ('2000005096','As if I dont have better things to do in my old age than carry buckets of water.');
