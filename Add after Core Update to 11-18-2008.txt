@@ -1909,3 +1909,310 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`spawnMask`,`modelid`,`equipment_id`,`
 DELETE FROM `creature` WHERE `id`=1910;
 INSERT INTO `creature` (`guid`,`id`,`map`,`spawnMask`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
 (17856, 1910, 0, 1, 0, 0, 2559.27, 1388.1, 4.529, 3.079, 3600, 0, 0, 190, 286, 0, 0);
+
+-- Nessy Dupes and wrong place
+DELETE FROM `creature` WHERE `id`=10942;
+INSERT INTO `creature` (`guid`,`id`,`map`,`spawnMask`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
+(46732, 10942, 369, 1, 0, 0, -114.448, 1258.18, -122.58, 0.183729, 6600, 0, 0, 3600, 0, 0, 0);
+
+-- Adam Eternum updated NPC Gossip
+UPDATE `creature_template` SET `npcflag` = 1048577 WHERE `entry` = 20273;
+
+-- Flameshocker stats and rep fix
+UPDATE `creature_template` SET `minhealth` = 33310, `maxhealth` = 33310, `minmana` = 0, `maxmana` = 0, `faction_A` = 168, `faction_H` = 168 WHERE `entry` = 16383;
+DELETE FROM `creature_onkill_reputation` WHERE (`creature_id`=16383);
+INSERT INTO `creature_onkill_reputation` (`creature_id`, `RewOnKillRepFaction1`, `RewOnKillRepFaction2`, `MaxStanding1`, `IsTeamAward1`, `RewOnKillRepValue1`, `MaxStanding2`, `IsTeamAward2`, `RewOnKillRepValue2`, `TeamDependent`) VALUES (16383, 529, 0, 7, 0, 10, 0, 0, 0, 0);
+UPDATE `creature` SET `curhealth` = 33310 WHERE `id` = 16383;
+
+-- Giant clam out of map
+DELETE FROM gameobject WHERE guid = '10837';
+INSERT INTO gameobject VALUES ( 10837, 179264, 369, 1, 26.1134, 1312.24, -124.623, -2, 0, 0, 0.939693, -0.34202, 180, 100, 1);
+
+-- Deeprun Divers WPs
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 46734;
+UPDATE `creature_template` SET `speed` = .5 WHERE `entry` = 14121;
+DELETE FROM `creature_movement` WHERE `id`=46734;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(46734, 1, 53.5573, 1303.29, -121.098, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.12482, 0, 0),
+(46734, 2, 41.099, 1265.99, -123.018, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 1.33294, 0, 0),
+(46734, 3, 68.8814, 1243.43, -122.643, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 5.53483, 0, 0),
+(46734, 4, 74.1072, 1279.09, -122.673, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.3304, 0, 0);
+
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 46741;
+DELETE FROM `creature_movement` WHERE `id`=46741;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(46741, 1, 95.8035, 1375.94, -122.222, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 1.47555, 0, 0),
+(46741, 2, 47.52, 1351.54, -120.94, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 3.61576, 0, 0);
+
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 46736;
+DELETE FROM `creature_movement` WHERE `id`=46736;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(46736, 1, 49.3074, 1205.64, -121.838, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 3.01425, 0, 0),
+(46736, 2, 38.2087, 1190.91, -122.151, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 4.12559, 0, 0);
+
+UPDATE `creature` SET `MovementType` = 2 WHERE `guid` = 95523;
+DELETE FROM `creature_movement` WHERE `id`=95523;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(95523, 1, 68.9706, 1107.01, -120.973, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 1.34004, 0, 0),
+(95523, 2, 80.3579, 1120.13, -119.801, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 0.613543, 0, 0);
+
+-- Ironspine Gazer spawn fix
+UPDATE creature SET position_x = '628.877258', position_y = '8820.265625', position_z = '28.820261', orientation = '2.321632' WHERE guid = '69511';
+UPDATE creature SET position_x = '525.425171', position_y = '8927.258789', position_z = '29.810295', orientation = '3.032412' WHERE guid = '69514';
+
+-- Spirit Healer Dupe
+DELETE FROM creature WHERE guid = '100736';
+
+-- Ango'rosh Mauler WPs
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 64854;
+DELETE FROM `creature_movement` WHERE `id`=64854;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(64854, 1, 1461.68, 8614.68, -12.6132, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.23446, 0, 0),
+(64854, 2, 1430.61, 8604.71, 1.28688, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.66897, 0, 0),
+(64854, 3, 1402.64, 8621.38, 7.07294, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.0656, 0, 0),
+(64854, 4, 1373.42, 8620.96, 13.1996, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.42688, 0, 0),
+(64854, 5, 1360.11, 8617.41, 16.1455, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.73319, 0, 0),
+(64854, 6, 1333.62, 8598.11, 20.4798, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.77246, 0, 0),
+(64854, 7, 1360.09, 8617.21, 16.1712, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.194967, 0, 0),
+(64854, 8, 1374.18, 8621.07, 13.0443, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.045742, 0, 0),
+(64854, 9, 1403.12, 8621.54, 6.98427, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.73202, 0, 0),
+(64854, 10, 1430.88, 8604.71, 1.18971, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.289214, 0, 0);
+
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 64866;
+DELETE FROM `creature_movement` WHERE `id`=64866;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(64866, 1, 1638.11, 8507.44, -7.17675, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 2.68401, 0, 0),
+(64866, 2, 1619.18, 8520.07, -5.86009, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.03213, 0, 0),
+(64866, 3, 1613.16, 8534.52, -8.344, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.65121, 0, 0),
+(64866, 4, 1606.57, 8579.79, -26.6601, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 1.69834, 0, 0),
+(64866, 5, 1613.09, 8533.67, -8.09517, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.18943, 0, 0),
+(64866, 6, 1619.21, 8519.8, -5.86172, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.67245, 0, 0);
+
+UPDATE `creature` SET `MovementType` = 2 WHERE `guid` = 64863;
+DELETE FROM `creature_movement` WHERE `id`=64863;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(64863, 1, 1669.54, 8521.89, -0.710861, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 4.80493, 0, 0),
+(64863, 2, 1670.16, 8497.61, -7.86179, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.70029, 0, 0),
+(64863, 3, 1687.77, 8483.91, -7.4335, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.62175, 0, 0),
+(64863, 4, 1671.27, 8496.76, -8.02953, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.89642, 0, 0),
+(64863, 5, 1646.09, 8503.03, -7.01232, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.88071, 0, 0),
+(64863, 6, 1667.33, 8498.64, -7.41843, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.34526, 0, 0);
+
+UPDATE creature SET position_x = '1627.264404', position_y = '8499.752930', position_z = '-10.099144', orientation = '1.215664' WHERE guid = '64864';
+UPDATE creature SET position_x = '1638.557373', position_y = '8492.442383', position_z = '-9.678108', orientation = '1.290276' WHERE guid = '64865';
+UPDATE creature SET position_x = '1014.868774', position_y = '8557.793945', position_z = '22.304403', orientation = '6.169965' WHERE guid = '64917';
+
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 64884;
+DELETE FROM `creature_movement` WHERE `id`=64884;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(64884, 1, 1666.22, 8587.74, -41.692, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 5.05577, 0, 0),
+(64884, 2, 1655.59, 8611.04, -33.8215, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.06871, 0, 0),
+(64884, 3, 1639.59, 8612.56, -29.6573, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 3.22186, 0, 0),
+(64884, 4, 1656.06, 8611.04, -33.9189, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.13824, 0, 0),
+(64884, 5, 1669.36, 8581.69, -43.3466, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.16572, 0, 0);
+
+UPDATE `creature` SET `MovementType` = 2 WHERE `guid` = 64888;
+DELETE FROM `creature_movement` WHERE `id`=64888;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(64888, 1, 1699.82, 8539.68, -48.0369, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 3.14159, 0, 0),
+(64888, 2, 1676.21, 8540.42, -49.5455, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.11017, 0, 0),
+(64888, 3, 1700.15, 8539.64, -47.9838, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0328, 0, 0),
+(64888, 4, 1711.53, 8554.78, -45.8818, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.63501, 0, 0),
+(64888, 5, 1685.79, 8567.8, -46.9618, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 2.69784, 0, 0),
+(64888, 6, 1710.7, 8554.68, -45.8772, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.30652, 0, 0);
+
+-- Ango'rosh Shadowmage WPs
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 64890;
+DELETE FROM `creature_movement` WHERE `id`=64890;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(64890, 1, 1666.69, 8472.71, -58.5862, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 2.14726, 0, 0),
+(64890, 2, 1653.53, 8492.04, -53.9405, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.15511, 0, 0),
+(64890, 3, 1654.96, 8475.57, -56.3386, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6.10174, 0, 0),
+(64890, 4, 1698.35, 8468.13, -59.9329, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6.11352, 0, 0);
+
+UPDATE creature SET position_x = '1674.300903', position_y = '8573.584961', position_z = '-45.068924', orientation = '2.328705' WHERE guid = '64887';
+
+-- Ango'rosh Souleater WPs
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 64856;
+DELETE FROM `creature_movement` WHERE `id`=64856;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(64856, 1, 1487.56, 8615.63, -25.0472, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 3.11477, 0, 0),
+(64856, 2, 1540.55, 8612.33, -32.4456, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.10691, 0, 0),
+(64856, 3, 1586.85, 8608.06, -33.3631, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 6.1307, 0, 0),
+(64856, 4, 1540.55, 8612.33, -32.4456, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.10691, 0, 0);
+
+-- BRS Spawn fixes
+UPDATE creature SET position_x = '74.196213', position_y = '-267.781128', position_z = '60.705227', orientation = '2.074105' WHERE guid = '121835';
+UPDATE creature SET position_x = '142.370605', position_y = '-446.754822', position_z = '121.975319', orientation = '1.265337' WHERE guid = '48570';
+
+-- Blackwing Guardsman WPs
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 51885;
+DELETE FROM `creature_movement` WHERE `id`=51885;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(51885, 1, -7500.39, -1052.32, 423.664, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.24205, 0, 0),
+(51885, 2, -7538.64, -997.273, 423.672, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.10046, 0, 0);
+
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 51842;
+DELETE FROM `creature_movement` WHERE `id`=51842;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(51842, 1, -7482.58, -957.606, 423.658, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.24599, 0, 0),
+(51842, 2, -7444.02, -1012.37, 423.665, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.2774, 0, 0);
+
+-- Lord Victor Nefarius
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 0 WHERE `guid` = 51851;
+
+-- Nessy Dupes and wrong place
+DELETE FROM `creature` WHERE `id`=10942;
+INSERT INTO `creature` (`guid`,`id`,`map`,`spawnMask`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
+(46732, 10942, 369, 1, 0, 0, -114.448, 1258.18, -122.58, 0.183729, 6600, 0, 0, 3600, 0, 0, 0);
+
+-- Adam Eternum updated NPC Gossip
+UPDATE `creature_template` SET `npcflag` = 1048577 WHERE `entry` = 20273;
+
+-- Flameshocker stats and rep fix
+UPDATE `creature_template` SET `minhealth` = 33310, `maxhealth` = 33310, `minmana` = 0, `maxmana` = 0, `faction_A` = 168, `faction_H` = 168 WHERE `entry` = 16383;
+DELETE FROM `creature_onkill_reputation` WHERE (`creature_id`=16383);
+INSERT INTO `creature_onkill_reputation` (`creature_id`, `RewOnKillRepFaction1`, `RewOnKillRepFaction2`, `MaxStanding1`, `IsTeamAward1`, `RewOnKillRepValue1`, `MaxStanding2`, `IsTeamAward2`, `RewOnKillRepValue2`, `TeamDependent`) VALUES (16383, 529, 0, 7, 0, 10, 0, 0, 0, 0);
+UPDATE `creature` SET `curhealth` = 33310 WHERE `id` = 16383;
+
+-- Giant clam out of map
+DELETE FROM gameobject WHERE guid = '10837';
+INSERT INTO gameobject VALUES ( 10837, 179264, 369, 1, 26.1134, 1312.24, -124.623, -2, 0, 0, 0.939693, -0.34202, 180, 100, 1);
+
+-- Deeprun Divers WPs
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 46734;
+UPDATE `creature_template` SET `speed` = .5 WHERE `entry` = 14121;
+DELETE FROM `creature_movement` WHERE `id`=46734;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(46734, 1, 53.5573, 1303.29, -121.098, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.12482, 0, 0),
+(46734, 2, 41.099, 1265.99, -123.018, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 1.33294, 0, 0),
+(46734, 3, 68.8814, 1243.43, -122.643, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 5.53483, 0, 0),
+(46734, 4, 74.1072, 1279.09, -122.673, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.3304, 0, 0);
+
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 46741;
+DELETE FROM `creature_movement` WHERE `id`=46741;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(46741, 1, 95.8035, 1375.94, -122.222, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 1.47555, 0, 0),
+(46741, 2, 47.52, 1351.54, -120.94, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 3.61576, 0, 0);
+
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 46736;
+DELETE FROM `creature_movement` WHERE `id`=46736;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(46736, 1, 49.3074, 1205.64, -121.838, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 3.01425, 0, 0),
+(46736, 2, 38.2087, 1190.91, -122.151, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 4.12559, 0, 0);
+
+UPDATE `creature` SET `MovementType` = 2 WHERE `guid` = 95523;
+DELETE FROM `creature_movement` WHERE `id`=95523;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(95523, 1, 68.9706, 1107.01, -120.973, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 1.34004, 0, 0),
+(95523, 2, 80.3579, 1120.13, -119.801, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 0.613543, 0, 0);
+
+-- Ironspine Gazer spawn fix
+UPDATE creature SET position_x = '628.877258', position_y = '8820.265625', position_z = '28.820261', orientation = '2.321632' WHERE guid = '69511';
+UPDATE creature SET position_x = '525.425171', position_y = '8927.258789', position_z = '29.810295', orientation = '3.032412' WHERE guid = '69514';
+
+-- Spirit Healer Dupe
+DELETE FROM creature WHERE guid = '100736';
+
+-- Ango'rosh Mauler WPs
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 64854;
+DELETE FROM `creature_movement` WHERE `id`=64854;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(64854, 1, 1461.68, 8614.68, -12.6132, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.23446, 0, 0),
+(64854, 2, 1430.61, 8604.71, 1.28688, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.66897, 0, 0),
+(64854, 3, 1402.64, 8621.38, 7.07294, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.0656, 0, 0),
+(64854, 4, 1373.42, 8620.96, 13.1996, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.42688, 0, 0),
+(64854, 5, 1360.11, 8617.41, 16.1455, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.73319, 0, 0),
+(64854, 6, 1333.62, 8598.11, 20.4798, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.77246, 0, 0),
+(64854, 7, 1360.09, 8617.21, 16.1712, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.194967, 0, 0),
+(64854, 8, 1374.18, 8621.07, 13.0443, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.045742, 0, 0),
+(64854, 9, 1403.12, 8621.54, 6.98427, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.73202, 0, 0),
+(64854, 10, 1430.88, 8604.71, 1.18971, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.289214, 0, 0);
+
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 64866;
+DELETE FROM `creature_movement` WHERE `id`=64866;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(64866, 1, 1638.11, 8507.44, -7.17675, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 2.68401, 0, 0),
+(64866, 2, 1619.18, 8520.07, -5.86009, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.03213, 0, 0),
+(64866, 3, 1613.16, 8534.52, -8.344, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.65121, 0, 0),
+(64866, 4, 1606.57, 8579.79, -26.6601, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 1.69834, 0, 0),
+(64866, 5, 1613.09, 8533.67, -8.09517, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.18943, 0, 0),
+(64866, 6, 1619.21, 8519.8, -5.86172, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.67245, 0, 0);
+
+UPDATE `creature` SET `MovementType` = 2 WHERE `guid` = 64863;
+DELETE FROM `creature_movement` WHERE `id`=64863;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(64863, 1, 1669.54, 8521.89, -0.710861, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 4.80493, 0, 0),
+(64863, 2, 1670.16, 8497.61, -7.86179, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.70029, 0, 0),
+(64863, 3, 1687.77, 8483.91, -7.4335, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.62175, 0, 0),
+(64863, 4, 1671.27, 8496.76, -8.02953, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.89642, 0, 0),
+(64863, 5, 1646.09, 8503.03, -7.01232, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.88071, 0, 0),
+(64863, 6, 1667.33, 8498.64, -7.41843, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.34526, 0, 0);
+
+UPDATE creature SET position_x = '1627.264404', position_y = '8499.752930', position_z = '-10.099144', orientation = '1.215664' WHERE guid = '64864';
+UPDATE creature SET position_x = '1638.557373', position_y = '8492.442383', position_z = '-9.678108', orientation = '1.290276' WHERE guid = '64865';
+UPDATE creature SET position_x = '1014.868774', position_y = '8557.793945', position_z = '22.304403', orientation = '6.169965' WHERE guid = '64917';
+
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 64884;
+DELETE FROM `creature_movement` WHERE `id`=64884;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(64884, 1, 1666.22, 8587.74, -41.692, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 5.05577, 0, 0),
+(64884, 2, 1655.59, 8611.04, -33.8215, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.06871, 0, 0),
+(64884, 3, 1639.59, 8612.56, -29.6573, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 3.22186, 0, 0),
+(64884, 4, 1656.06, 8611.04, -33.9189, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.13824, 0, 0),
+(64884, 5, 1669.36, 8581.69, -43.3466, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.16572, 0, 0);
+
+UPDATE `creature` SET `MovementType` = 2 WHERE `guid` = 64888;
+DELETE FROM `creature_movement` WHERE `id`=64888;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(64888, 1, 1699.82, 8539.68, -48.0369, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 3.14159, 0, 0),
+(64888, 2, 1676.21, 8540.42, -49.5455, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.11017, 0, 0),
+(64888, 3, 1700.15, 8539.64, -47.9838, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0328, 0, 0),
+(64888, 4, 1711.53, 8554.78, -45.8818, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.63501, 0, 0),
+(64888, 5, 1685.79, 8567.8, -46.9618, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 2.69784, 0, 0),
+(64888, 6, 1710.7, 8554.68, -45.8772, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.30652, 0, 0);
+
+-- Ango'rosh Shadowmage WPs
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 64890;
+DELETE FROM `creature_movement` WHERE `id`=64890;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(64890, 1, 1666.69, 8472.71, -58.5862, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 2.14726, 0, 0),
+(64890, 2, 1653.53, 8492.04, -53.9405, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.15511, 0, 0),
+(64890, 3, 1654.96, 8475.57, -56.3386, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6.10174, 0, 0),
+(64890, 4, 1698.35, 8468.13, -59.9329, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6.11352, 0, 0);
+
+UPDATE creature SET position_x = '1674.300903', position_y = '8573.584961', position_z = '-45.068924', orientation = '2.328705' WHERE guid = '64887';
+
+-- Ango'rosh Souleater WPs
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 64856;
+DELETE FROM `creature_movement` WHERE `id`=64856;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(64856, 1, 1487.56, 8615.63, -25.0472, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 3.11477, 0, 0),
+(64856, 2, 1540.55, 8612.33, -32.4456, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.10691, 0, 0),
+(64856, 3, 1586.85, 8608.06, -33.3631, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 6.1307, 0, 0),
+(64856, 4, 1540.55, 8612.33, -32.4456, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.10691, 0, 0);
+
+-- BRS Spawn fixes
+UPDATE creature SET position_x = '74.196213', position_y = '-267.781128', position_z = '60.705227', orientation = '2.074105' WHERE guid = '121835';
+UPDATE creature SET position_x = '142.370605', position_y = '-446.754822', position_z = '121.975319', orientation = '1.265337' WHERE guid = '48570';
+
+-- Blackwing Guardsman WPs
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 51885;
+DELETE FROM `creature_movement` WHERE `id`=51885;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(51885, 1, -7500.39, -1052.32, 423.664, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.24205, 0, 0),
+(51885, 2, -7538.64, -997.273, 423.672, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.10046, 0, 0);
+
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 51842;
+DELETE FROM `creature_movement` WHERE `id`=51842;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`textid1`,`textid2`,`textid3`,`textid4`,`textid5`,`emote`,`spell`,`wpguid`,`orientation`,`model1`,`model2`) VALUES
+(51842, 1, -7482.58, -957.606, 423.658, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.24599, 0, 0),
+(51842, 2, -7444.02, -1012.37, 423.665, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.2774, 0, 0);
+
+-- Lord Victor Nefarius
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 0 WHERE `guid` = 51851;
+
+
+
+
+
