@@ -1,6 +1,6 @@
 -- MySQL dump 10.11
 --
--- Host: localhost    Database: mangos
+-- Host: localhost    Database: mangos2
 -- ------------------------------------------------------
 -- Server version	5.0.51b-community-nt
 
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2008-10-08 21:41:49
+-- Dump completed on 2008-12-03 19:02:10
