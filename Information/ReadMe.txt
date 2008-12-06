@@ -15,4 +15,5 @@ SADraco     - Database Team
 BrainDedd   - Database Team
 Kicho       - Database Team
 GrieVelorn  - Database Team
+Marx        - Database Team
 Rilex       - Bug Tracker Officer
