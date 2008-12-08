@@ -1,6 +1,6 @@
 -- MySQL dump 10.11
 --
--- Host: localhost    Database: silvermoon
+-- Host: localhost    Database: slk
 -- ------------------------------------------------------
 -- Server version	5.0.67
 
@@ -35,6 +35,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `areatrigger_scripts` WRITE;
 /*!40000 ALTER TABLE `areatrigger_scripts` DISABLE KEYS */;
+INSERT INTO `areatrigger_scripts` VALUES (522,'at_twiggy_flathead');
 /*!40000 ALTER TABLE `areatrigger_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -47,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2008-09-27 17:49:29
+-- Dump completed on 2008-12-08 13:42:52
