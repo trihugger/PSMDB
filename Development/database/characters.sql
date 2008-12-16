@@ -15,13 +15,22 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+
+--
+-- Table structure for table `saved_variables`
+--
+
+CREATE TABLE `saved_variables` (
+    `NextArenaPointDistributionTime` bigint(40) UNSIGNED NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Variable Saves';
+
 --
 -- Table structure for table `character_db_version`
 --
 
 DROP TABLE IF EXISTS `character_db_version`;
 CREATE TABLE `character_db_version` (
-  `required_2008_12_03_01_character_guild_member` bit(1) default NULL
+  `required_2008_12_15_01_character_arenas` bit(1) default NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Last applied sql update to DB';
 
 --
@@ -33,6 +42,28 @@ LOCK TABLES `character_db_version` WRITE;
 INSERT INTO `character_db_version` VALUES
 (NULL);
 /*!40000 ALTER TABLE `character_db_version` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `account_data`
+--
+
+DROP TABLE IF EXISTS `account_data`;
+CREATE TABLE `account_data` (
+  `account` int(11) unsigned NOT NULL default '0',
+  `type` int(11) unsigned NOT NULL default '0',
+  `time` bigint(11) unsigned NOT NULL default '0',
+  `data` longtext NOT NULL,
+  PRIMARY KEY  (`account`,`type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `account_data`
+--
+
+LOCK TABLES `account_data` WRITE;
+/*!40000 ALTER TABLE `account_data` DISABLE KEYS */;
+/*!40000 ALTER TABLE `account_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -73,7 +104,8 @@ CREATE TABLE `arena_team_member` (
   `played_week` int(10) unsigned NOT NULL default '0',
   `wons_week` int(10) unsigned NOT NULL default '0',
   `played_season` int(10) unsigned NOT NULL default '0',
-  `wons_season` int(10) unsigned NOT NULL default '0'
+  `wons_season` int(10) unsigned NOT NULL default '0',
+  `personal_rating` int(10) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -201,6 +233,7 @@ CREATE TABLE `characters` (
   `zone` int(11) unsigned NOT NULL default '0',
   `death_expire_time` bigint(20) unsigned NOT NULL default '0',
   `taxi_path` text,
+  `arena_pending_points` int(10) UNSIGNED NOT NULL default '0',
   PRIMARY KEY  (`guid`),
   KEY `idx_account` (`account`),
   KEY `idx_online` (`online`),
@@ -214,6 +247,47 @@ CREATE TABLE `characters` (
 LOCK TABLES `characters` WRITE;
 /*!40000 ALTER TABLE `characters` DISABLE KEYS */;
 /*!40000 ALTER TABLE `characters` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `character_achievement`
+--
+
+CREATE TABLE IF NOT EXISTS `character_achievement` (
+  `guid` int(11) NOT NULL,
+  `achievement` int(11) NOT NULL,
+  `date` int(11) NOT NULL,
+  PRIMARY KEY  (`guid`,`achievement`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `character_achievement`
+--
+
+LOCK TABLES `character_achievement` WRITE;
+/*!40000 ALTER TABLE `character_achievement` DISABLE KEYS */;
+/*!40000 ALTER TABLE `character_achievement` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `character_achievement_progress`
+--
+
+CREATE TABLE IF NOT EXISTS `character_achievement_progress` (
+  `guid` int(11) NOT NULL,
+  `criteria` int(11) NOT NULL,
+  `counter` int(11) NOT NULL,
+  `date` int(11) NOT NULL,
+  PRIMARY KEY  (`guid`,`criteria`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `character_achievement_progress`
+--
+
+LOCK TABLES `character_achievement_progress` WRITE;
+/*!40000 ALTER TABLE `character_achievement_progress` DISABLE KEYS */;
+/*!40000 ALTER TABLE `character_achievement_progress` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -398,9 +472,7 @@ CREATE TABLE `character_pet` (
   `level` int(11) unsigned NOT NULL default '1',
   `exp` int(11) unsigned NOT NULL default '0',
   `Reactstate` tinyint(1) unsigned NOT NULL default '0',
-  `loyaltypoints` int(11) NOT NULL default '0',
-  `loyalty` int(11) unsigned NOT NULL default '0',
-  `trainpoint` int(11) NOT NULL default '0',
+  `talentpoints` int(11) unsigned NOT NULL default '0',
   `name` varchar(100) default 'Pet',
   `renamed` tinyint(1) unsigned NOT NULL default '0',
   `slot` int(11) unsigned NOT NULL default '0',

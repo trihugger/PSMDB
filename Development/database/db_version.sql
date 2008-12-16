@@ -1,8 +1,8 @@
--- MySQL dump 10.11
+-- MySQL dump 10.13  Distrib 5.1.30, for Win32 (ia32)
 --
--- Host: localhost    Database: mangos2
+-- Host: localhost    Database: slk
 -- ------------------------------------------------------
--- Server version	5.0.51b-community-nt
+-- Server version	5.1.30
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,8 +23,8 @@ DROP TABLE IF EXISTS `db_version`;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
 CREATE TABLE `db_version` (
-  `version` varchar(120) default NULL,
-  `required_2008_11_29_02_mangos_spell_elixir` bit(1) default NULL
+  `version` varchar(120) DEFAULT NULL,
+  `required_2008_12_15_01_mangos_arenas` bit(1) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Used DB version notes';
 SET character_set_client = @saved_cs_client;
 
@@ -34,7 +34,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` VALUES ('PSDB WotLK (40)',NULL);
+INSERT INTO `db_version` VALUES ('PSDB WotLK (41)',NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -47,4 +47,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2008-12-13 22:57:25
+-- Dump completed on 2008-12-16 13:56:29

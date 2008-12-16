@@ -1,3 +1,3 @@
-MaNGOS: 2008-12-03 [WotLK Update 11]
-Scriptdev2: r794
+MaNGOS: 2008-12-15 [WotLK Update 11]
+Scriptdev2: r796
 Acid: 0.0.5 r22
