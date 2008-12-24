@@ -43,8 +43,7 @@ set dbpath=Development\database
 set mysql=.
 
 echo.
-echo This will wipe out your current world db
-echo and replace it.
+echo This will wipe out your current World database and replace it.
 set /p yesno=Do you wish to continue? (y/n) 
 if %yesno% neq y if %yesno% neq Y goto phase2
 
@@ -55,8 +54,7 @@ for %%i in (%dbpath%\*.sql) do if %%i neq %dbpath%\scriptdev2.sql if %%i neq %db
 
 :phase2
 echo.
-echo This will wipe out your current scriptdev2 
-echo database and replace it.
+echo This will wipe out your current ScriptDev2 database and replace it.
 set /p yesno=Do you wish to continue? (y/n) 
 if %yesno% neq y if %yesno% neq Y goto phase3
 echo Importing...
@@ -64,16 +62,14 @@ echo Importing...
 
 :phase3
 echo.
-echo This will wipe out your current realm database
-echo and replace it.
+echo This will wipe out your current Realm database and replace it.
 set /p yesno=Do you wish to continue? (y/n) 
 if %yesno% neq y if %yesno% neq Y goto phase4
 echo Importing...
 %mysql%\mysql -h %svr% --user=%user% --password=%pass% --port=%port% %rdb% < %dbpath%\realmd.sql
 :phase4
 echo.
-echo This will wipe out your current charaters database
-echo and replace it.
+echo This will wipe out your current Characters database and replace it.
 set /p yesno=Do you wish to continue? (y/n) 
 if %yesno% neq y if %yesno% neq Y goto exit
 echo Importing...

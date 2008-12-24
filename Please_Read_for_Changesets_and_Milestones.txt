@@ -1,7 +1,5 @@
 PROJECT SILVERMOON MANGOS DATABASE
 
-THIS IS A "USE AT YOUR OWN RISK" BRANCH, UNTIL MANGOS OFFICIALLY SUPPORTS IT...
-
 Home Page: http://project-silvermoon.net/
 SVN: http://svn.assembla.com/svn/psmdb_wotlk
 Single SQL Path : http://svn.assembla.com/svn/psmdb_wotlk/Development/database
