@@ -1,8 +1,8 @@
--- MySQL dump 10.11
+-- MySQL dump 10.13  Distrib 5.1.30, for Win32 (ia32)
 --
--- Host: localhost    Database: mangos
+-- Host: localhost    Database: slk
 -- ------------------------------------------------------
--- Server version	5.0.51b-community-nt
+-- Server version	5.1.30
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,9 +23,9 @@ DROP TABLE IF EXISTS `spell_learn_spell`;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
 CREATE TABLE `spell_learn_spell` (
-  `entry` smallint(5) unsigned NOT NULL default '0',
-  `SpellID` smallint(5) unsigned NOT NULL default '0',
-  PRIMARY KEY  (`entry`,`SpellID`)
+  `entry` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `SpellID` smallint(5) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`entry`,`SpellID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Item System';
 SET character_set_client = @saved_cs_client;
 
@@ -35,7 +35,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `spell_learn_spell` WRITE;
 /*!40000 ALTER TABLE `spell_learn_spell` DISABLE KEYS */;
-INSERT INTO `spell_learn_spell` VALUES (2842,8681),(5784,33388),(13819,33388),(17002,24867),(23161,33391),(23214,33391),(24866,24864),(33872,47179),(33873,47180),(33943,34090),(34767,33391),(34769,33388);
+INSERT INTO `spell_learn_spell` VALUES (5784,33388),(13819,33388),(17002,24867),(23161,33391),(23214,33391),(24866,24864),(33872,47179),(33873,47180),(33943,34090),(34767,33391),(34769,33388),(53428,53341),(53428,53343);
 /*!40000 ALTER TABLE `spell_learn_spell` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2008-06-06 21:19:16
+-- Dump completed on 2008-12-26 12:45:14

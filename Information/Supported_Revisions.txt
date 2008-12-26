@@ -1,3 +1,3 @@
-MaNGOS: 2008-12-24 (r6939)
+MaNGOS: r6941
 Scriptdev2: r814
 Acid: 0.0.5 r22

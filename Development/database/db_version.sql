@@ -24,7 +24,7 @@ SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
 CREATE TABLE `db_version` (
   `version` varchar(120) DEFAULT NULL,
-  `required_6939_01_mangos_quest_template` bit(1) DEFAULT NULL
+  `required_6944_01_mangos_mangos_string` bit(1) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Used DB version notes';
 SET character_set_client = @saved_cs_client;
 
@@ -34,7 +34,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` VALUES ('PSDB WotLK (43)',NULL);
+INSERT INTO `db_version` VALUES ('PSDB WotLK (44)',NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -47,4 +47,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2008-12-24 12:12:29
+-- Dump completed on 2008-12-26 12:45:08
