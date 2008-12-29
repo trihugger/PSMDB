@@ -4,7 +4,7 @@ Home Page: http://project-silvermoon.net/
 SVN: http://svn.assembla.com/svn/psmdb_wotlk
 Single SQL Path : http://svn.assembla.com/svn/psmdb_wotlk/Development/database
 Milestones & Changesets Path : http://svn.assembla.com/svn/psmdb_wotlk
-Server Binaries: http://project-silvermoon.net/index.php?showtopic=77
+Server Binaries: http://project-silvermoon.net/index.php?showtopic=71
 
 For Changesets & Milestones, we have moved all of those too our secondary
 svn, which can be located at :
