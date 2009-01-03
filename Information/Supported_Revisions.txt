@@ -1,3 +1,3 @@
-MaNGOS: r6976
-Scriptdev2: r828
+MaNGOS: r7002
+Scriptdev2: r835
 Acid: 0.0.5 r22
