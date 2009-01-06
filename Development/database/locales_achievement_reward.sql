@@ -16,34 +16,41 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `battleground_template`
+-- Table structure for table `locales_achievement_reward`
 --
 
-DROP TABLE IF EXISTS `battleground_template`;
+DROP TABLE IF EXISTS `locales_achievement_reward`;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
-CREATE TABLE `battleground_template` (
-  `id` mediumint(8) unsigned NOT NULL,
-  `MinPlayersPerTeam` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `MaxPlayersPerTeam` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `MinLvl` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `MaxLvl` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `AllianceStartLoc` mediumint(8) unsigned NOT NULL,
-  `AllianceStartO` float NOT NULL,
-  `HordeStartLoc` mediumint(8) unsigned NOT NULL,
-  `HordeStartO` float NOT NULL,
-  PRIMARY KEY (`id`)
+CREATE TABLE `locales_achievement_reward` (
+  `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `subject_loc1` varchar(100) NOT NULL DEFAULT '',
+  `subject_loc2` varchar(100) NOT NULL DEFAULT '',
+  `subject_loc3` varchar(100) NOT NULL DEFAULT '',
+  `subject_loc4` varchar(100) NOT NULL DEFAULT '',
+  `subject_loc5` varchar(100) NOT NULL DEFAULT '',
+  `subject_loc6` varchar(100) NOT NULL DEFAULT '',
+  `subject_loc7` varchar(100) NOT NULL DEFAULT '',
+  `subject_loc8` varchar(100) NOT NULL DEFAULT '',
+  `text_loc1` text,
+  `text_loc2` text,
+  `text_loc3` text,
+  `text_loc4` text,
+  `text_loc5` text,
+  `text_loc6` text,
+  `text_loc7` text,
+  `text_loc8` text,
+  PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
 
 --
--- Dumping data for table `battleground_template`
+-- Dumping data for table `locales_achievement_reward`
 --
 
-LOCK TABLES `battleground_template` WRITE;
-/*!40000 ALTER TABLE `battleground_template` DISABLE KEYS */;
-INSERT INTO `battleground_template` VALUES (1,20,40,51,70,611,2.72532,610,2.27452),(2,5,10,10,70,769,3.14159,770,3.14159),(3,8,15,20,70,890,3.40156,889,0.263892),(7,8,15,61,70,1103,3.40156,1104,0.263892),(4,0,2,10,70,929,0,936,3.14159),(5,0,2,10,70,939,0,940,3.14159),(6,0,2,10,70,0,0,0,0),(8,0,2,10,70,1258,0,1259,3.14159),(9,0,0,0,0,1367,0,1368,0),(10,5,5,10,80,1362,0,1363,0),(11,5,5,10,80,1364,0,1365,0);
-/*!40000 ALTER TABLE `battleground_template` ENABLE KEYS */;
+LOCK TABLES `locales_achievement_reward` WRITE;
+/*!40000 ALTER TABLE `locales_achievement_reward` DISABLE KEYS */;
+/*!40000 ALTER TABLE `locales_achievement_reward` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -55,4 +62,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-01-06 18:19:30
+-- Dump completed on 2009-01-06 18:20:05
