@@ -1,0 +1,5 @@
+Having problems with PSDB_Installer.bat?
+
+Unless the sql's are in "\Development\database" subfolder below the bat file, it won't install them. To avoid this problem, Leave the SVN "Fully Recursive" when you Update it. Thanks goes to Poe for bringing this to my attention...
+
+Rog360
