@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.30, for Win32 (ia32)
+-- MySQL dump 10.11
 --
--- Host: localhost    Database: slk
+-- Host: localhost    Database: mangos
 -- ------------------------------------------------------
--- Server version	5.1.30
+-- Server version	5.0.51b-community-nt-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -24,15 +24,15 @@ SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
 CREATE TABLE `battleground_template` (
   `id` mediumint(8) unsigned NOT NULL,
-  `MinPlayersPerTeam` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `MaxPlayersPerTeam` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `MinLvl` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `MaxLvl` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `MinPlayersPerTeam` smallint(5) unsigned NOT NULL default '0',
+  `MaxPlayersPerTeam` smallint(5) unsigned NOT NULL default '0',
+  `MinLvl` tinyint(3) unsigned NOT NULL default '0',
+  `MaxLvl` tinyint(3) unsigned NOT NULL default '0',
   `AllianceStartLoc` mediumint(8) unsigned NOT NULL,
   `AllianceStartO` float NOT NULL,
   `HordeStartLoc` mediumint(8) unsigned NOT NULL,
   `HordeStartO` float NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY  (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
 
@@ -42,7 +42,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `battleground_template` WRITE;
 /*!40000 ALTER TABLE `battleground_template` DISABLE KEYS */;
-INSERT INTO `battleground_template` VALUES (1,20,40,51,70,611,2.72532,610,2.27452),(2,5,10,10,70,769,3.14159,770,3.14159),(3,8,15,20,70,890,3.40156,889,0.263892),(7,8,15,61,70,1103,3.40156,1104,0.263892),(4,0,2,10,70,929,0,936,3.14159),(5,0,2,10,70,939,0,940,3.14159),(6,0,2,10,70,0,0,0,0),(8,0,2,10,70,1258,0,1259,3.14159),(9,0,0,0,0,1367,0,1368,0),(10,5,5,10,80,1362,0,1363,0),(11,5,5,10,80,1364,0,1365,0);
+INSERT INTO `battleground_template` VALUES (1,20,40,51,80,611,2.72532,610,2.27452),(2,5,10,10,80,769,3.14159,770,3.14159),(3,8,15,20,80,890,3.40156,889,0.263892),(7,8,15,61,80,1103,3.40156,1104,0.263892),(4,0,2,10,80,929,0,936,3.14159),(5,0,2,10,80,939,0,940,3.14159),(6,0,2,10,80,0,0,0,0),(8,0,2,10,80,1258,0,1259,3.14159),(9,0,0,0,80,1367,0,1368,0),(10,5,5,10,80,1362,0,1363,0),(11,5,5,10,80,1364,0,1365,0);
 /*!40000 ALTER TABLE `battleground_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-01-06 18:19:30
+-- Dump completed on 2009-01-13 20:15:44
