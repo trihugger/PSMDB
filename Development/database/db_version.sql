@@ -34,7 +34,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` VALUES ('PSDB WotLK (75)',NULL);
+INSERT INTO `db_version` VALUES ('PSDB WotLK (76)',NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -47,4 +47,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-01-16 22:29:42
+-- Dump completed on 2009-01-17 20:05:22
