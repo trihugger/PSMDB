@@ -1,8 +1,8 @@
--- MySQL dump 10.11
+-- MySQL dump 10.13  Distrib 5.1.30, for Win32 (ia32)
 --
--- Host: localhost    Database: mangos
+-- Host: localhost    Database: slk
 -- ------------------------------------------------------
--- Server version	5.0.51b-community-nt
+-- Server version	5.1.30
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,10 +23,11 @@ DROP TABLE IF EXISTS `skill_discovery_template`;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
 CREATE TABLE `skill_discovery_template` (
-  `spellId` mediumint(8) unsigned NOT NULL default '0' COMMENT 'SpellId of the discoverable spell',
-  `reqSpell` mediumint(8) unsigned NOT NULL default '0' COMMENT 'spell requirement',
-  `chance` float NOT NULL default '0' COMMENT 'chance to discover',
-  PRIMARY KEY  (`spellId`)
+  `spellId` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'SpellId of the discoverable spell',
+  `reqSpell` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'spell requirement',
+  `reqClass` tinyint(2) unsigned NOT NULL DEFAULT '0' COMMENT 'class requirement',
+  `chance` float NOT NULL DEFAULT '0' COMMENT 'chance to discover',
+  PRIMARY KEY (`spellId`,`reqSpell`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Skill Discovery System';
 SET character_set_client = @saved_cs_client;
 
@@ -36,7 +37,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `skill_discovery_template` WRITE;
 /*!40000 ALTER TABLE `skill_discovery_template` DISABLE KEYS */;
-INSERT INTO `skill_discovery_template` VALUES (28590,0,0.1),(28587,0,0.1),(28588,0,0.1),(28591,0,0.1),(28589,0,0.1),(28586,0,0.1),(28585,0,0.1),(28584,0,0.1),(28580,0,0.1),(28581,0,0.1),(28583,0,0.1),(28582,0,0.1),(41458,28575,30),(41500,28571,30),(41501,28572,30),(41502,28573,30),(41503,28576,30);
+INSERT INTO `skill_discovery_template` VALUES (28590,0,0,0.1),(28587,0,0,0.1),(28588,0,0,0.1),(28591,0,0,0.1),(28589,0,0,0.1),(28586,0,0,0.1),(28585,0,0,0.1),(28584,0,0,0.1),(28580,0,0,0.1),(28581,0,0,0.1),(28583,0,0,0.1),(28582,0,0,0.1),(41458,28575,0,30),(41500,28571,0,30),(41501,28572,0,30),(41502,28573,0,30),(41503,28576,0,30);
 /*!40000 ALTER TABLE `skill_discovery_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2008-06-06 21:19:16
+-- Dump completed on 2009-01-20 19:39:14
