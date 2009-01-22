@@ -16,26 +16,33 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `db_version`
+-- Table structure for table `spell_loot_template`
 --
 
-DROP TABLE IF EXISTS `db_version`;
+DROP TABLE IF EXISTS `spell_loot_template`;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
-CREATE TABLE `db_version` (
-  `version` varchar(120) DEFAULT NULL,
-  `required_7133_02_mangos_spell_loot_template` bit(1) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Used DB version notes';
+CREATE TABLE `spell_loot_template` (
+  `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `item` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `ChanceOrQuestChance` float NOT NULL DEFAULT '100',
+  `groupid` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `mincountOrRef` mediumint(9) NOT NULL DEFAULT '1',
+  `maxcount` tinyint(3) unsigned NOT NULL DEFAULT '1',
+  `lootcondition` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `condition_value1` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `condition_value2` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`entry`,`item`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
 SET character_set_client = @saved_cs_client;
 
 --
--- Dumping data for table `db_version`
+-- Dumping data for table `spell_loot_template`
 --
 
-LOCK TABLES `db_version` WRITE;
-/*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` VALUES ('PSDB WotLK (89)',NULL);
-/*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
+LOCK TABLES `spell_loot_template` WRITE;
+/*!40000 ALTER TABLE `spell_loot_template` DISABLE KEYS */;
+/*!40000 ALTER TABLE `spell_loot_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -47,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-01-21 16:55:47
+-- Dump completed on 2009-01-21 16:56:08
