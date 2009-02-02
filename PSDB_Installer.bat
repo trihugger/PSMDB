@@ -16,6 +16,7 @@ set sd2db=scriptdev2
 rem -- Don't change past this point --
 set yesno=y
 goto install
+
 :standard
 rem Standard install section
 color 3
@@ -52,6 +53,18 @@ if %rdb%. == . set rdb=realmd
 set dbpath=Development\database
 set optim=Tools\DB_Optimizer
 set mysql=.
+
+:checkpaths
+if not exist %dbpath% then goto patherror
+if not exist %optim% then goto patherror
+if not exist %mysql%\mysql.exe then goto patherror
+goto world
+
+:patherror
+echo Cannot find required files, please ensure you have done a fully
+echo recursive checkout from the SVN.
+pause
+goto eof
 
 :world
 if %quick% == off echo.
