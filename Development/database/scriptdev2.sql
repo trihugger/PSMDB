@@ -250,7 +250,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `sd2_db_version` WRITE;
 /*!40000 ALTER TABLE `sd2_db_version` DISABLE KEYS */;
-INSERT INTO `sd2_db_version` VALUES ('PSDB EAI / ACID 0.0.5');
+INSERT INTO `sd2_db_version` VALUES ('PSDB EAI / ACID');
 /*!40000 ALTER TABLE `sd2_db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
