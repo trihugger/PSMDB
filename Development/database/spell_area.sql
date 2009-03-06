@@ -28,7 +28,7 @@ CREATE TABLE `spell_area` (
   `quest_start` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `quest_start_active` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `quest_end` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `aura_spell` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `aura_spell` mediumint(8) NOT NULL DEFAULT '0',
   `racemask` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `gender` tinyint(1) unsigned NOT NULL DEFAULT '2',
   `autocast` tinyint(1) unsigned NOT NULL DEFAULT '0',
@@ -55,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-03-02 15:23:16
+-- Dump completed on 2009-03-06 18:13:37
