@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: mangos
 -- ------------------------------------------------------
--- Server version	5.0.45-community-nt-log
+-- Server version	5.1.32-community
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,11 +23,11 @@ DROP TABLE IF EXISTS `creature_equip_template`;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
 CREATE TABLE `creature_equip_template` (
-  `entry` mediumint(8) unsigned NOT NULL default '0' COMMENT 'Unique entry',
-  `equipentry1` mediumint(8) unsigned NOT NULL default '0',
-  `equipentry2` mediumint(8) unsigned NOT NULL default '0',
-  `equipentry3` mediumint(8) unsigned NOT NULL default '0',
-  PRIMARY KEY  (`entry`)
+  `entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Unique entry',
+  `equipentry1` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `equipentry2` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `equipentry3` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Creature System (Equipment)';
 SET character_set_client = @saved_cs_client;
 
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-03-06 19:20:38
+-- Dump completed on 2009-03-20  4:17:54
