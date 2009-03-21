@@ -64,7 +64,7 @@ goto world
 echo Cannot find required files, please ensure you have done a fully
 echo recursive checkout from the SVN.
 pause
-goto eof
+goto :eof
 
 :world
 if %quick% == off echo.
@@ -130,7 +130,7 @@ echo ScriptDev2
 del optimize.sql
 del scriptdev2_optimize.sql
 
-if %quick% neq off goto eof
+if %quick% neq off goto :eof
 
 :done
 echo.
