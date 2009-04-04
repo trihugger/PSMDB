@@ -11,6 +11,4 @@ Imperium    - Project Supervisor
 Rog360      - Project Leader
 SADraco     - Database Team
 BrainDedd   - Database Team
-GrieVelorn  - Database Team
-Marx        - Database Team
 Rilex       - Bug Tracker Officer
