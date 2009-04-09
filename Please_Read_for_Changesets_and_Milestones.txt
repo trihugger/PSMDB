@@ -15,8 +15,7 @@ The reason : we want our main svn to house the single sql files & .bat
 importer tool, as this is the proper use of a true svn, we feel that full releases
 are "extras". 
 
-As for changesets, we know these are a vital part of updating an existing database, 
-and we will continue with those as well.
+As for changesets, We no longer have the time,space or man power to do this.You will have to Backup your custom content, Update from svn and add your custom content back to your db.
 
 Also, the old svn setup was over 300+ megs, which was way to much for a download,
 this allows us too manage the svn better.
