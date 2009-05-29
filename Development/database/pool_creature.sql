@@ -27,7 +27,8 @@ CREATE TABLE `pool_creature` (
   `pool_entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `chance` float unsigned NOT NULL DEFAULT '0',
   `description` varchar(255) NOT NULL,
-  PRIMARY KEY (`pool_entry`,`guid`)
+  PRIMARY KEY (`pool_entry`,`guid`),
+  KEY `idx_guid` (`guid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -49,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-05-20 17:49:33
+-- Dump completed on 2009-05-29 12:58:07
