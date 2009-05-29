@@ -1,2 +1,2 @@
-MaNGOS: r7887
-Scriptdev2: r1104
+MaNGOS: r7908
+Scriptdev2: r1106
