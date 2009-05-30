@@ -1,4 +1,4 @@
-This patch add custom GM vendor on GM island
+This patch add custom GM vendor on GM island (MaNGOS: r7908)
 1- apply patch "mangos_gm_island_vendors.sql" on db mangos
 
 2- currently this vendors can only be seen by GM char in mode .gm on to prevent possible abuse from hack telport users - if you want to allow every player to see them set phasemask = 1 by applying this code after patch:
