@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: mangos
 -- ------------------------------------------------------
--- Server version	5.0.45-community-nt-log
+-- Server version	5.1.32-community
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,9 +23,9 @@ DROP TABLE IF EXISTS `areatrigger_involvedrelation`;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
 CREATE TABLE `areatrigger_involvedrelation` (
-  `id` mediumint(8) unsigned NOT NULL default '0' COMMENT 'Identifier',
-  `quest` mediumint(8) unsigned NOT NULL default '0' COMMENT 'Quest Identifier',
-  PRIMARY KEY  (`id`)
+  `id` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier',
+  `quest` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Quest Identifier',
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Trigger System';
 SET character_set_client = @saved_cs_client;
 
@@ -35,7 +35,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `areatrigger_involvedrelation` WRITE;
 /*!40000 ALTER TABLE `areatrigger_involvedrelation` DISABLE KEYS */;
-INSERT INTO `areatrigger_involvedrelation` VALUES (78,155),(88,62),(98,201),(196,578),(197,62),(216,870),(225,944),(230,954),(302,1265),(87,76),(362,1448),(482,1699),(1205,2989),(2327,4842),(2486,4811),(2946,6421),(3986,8286),(4301,9786),(168,287),(3367,6025),(235,984),(169,287),(4071,9193),(4200,9607),(4201,9608),(4291,9701),(4293,9716),(4298,9731),(4300,9752),(1388,3505),(4473,10269),(4475,10275),(175,455),(178,503),(231,984),(232,984),(246,1149),(522,1719),(2926,25),(5003,12506),(4986,12263),(171,273),(173,437),(2726,6185),(4064,9160),(4170,9400),(4581,10750),(4588,10772),(4963,11652),(4899,11890),(4950,12036);
+INSERT INTO `areatrigger_involvedrelation` VALUES (78,155),(88,62),(98,201),(196,578),(197,62),(216,870),(225,944),(230,954),(302,1265),(87,76),(362,1448),(482,1699),(1205,2989),(2327,4842),(2486,4811),(2946,6421),(3986,8286),(4301,9786),(168,287),(3367,6025),(235,984),(169,287),(4071,9193),(4200,9607),(4201,9608),(4291,9701),(4293,9716),(4298,9731),(4300,9752),(1388,3505),(4473,10269),(4475,10275),(175,455),(178,503),(231,984),(232,984),(246,1149),(522,1719),(2926,25),(5003,12506),(4986,12263),(171,273),(173,437),(2726,6185),(4064,9160),(4170,9400),(4581,10750),(4588,10772),(4963,11652),(4899,11890),(4950,12036),(4894,11878);
 /*!40000 ALTER TABLE `areatrigger_involvedrelation` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-03-02 20:48:59
+-- Dump completed on 2009-06-12 23:47:05
