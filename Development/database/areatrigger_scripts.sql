@@ -1,8 +1,8 @@
--- MySQL dump 10.11
+-- MySQL dump 10.13  Distrib 5.1.35, for Win32 (ia32)
 --
--- Host: localhost    Database: mangos
+-- Host: localhost    Database: slk
 -- ------------------------------------------------------
--- Server version	5.1.32-community
+-- Server version	5.1.35
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,14 +20,14 @@
 --
 
 DROP TABLE IF EXISTS `areatrigger_scripts`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `areatrigger_scripts` (
   `entry` mediumint(8) NOT NULL,
   `ScriptName` char(64) NOT NULL,
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-SET character_set_client = @saved_cs_client;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `areatrigger_scripts`
@@ -35,7 +35,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `areatrigger_scripts` WRITE;
 /*!40000 ALTER TABLE `areatrigger_scripts` DISABLE KEYS */;
-INSERT INTO `areatrigger_scripts` VALUES (522,'at_twiggy_flathead'),(4560,'at_legion_teleporter'),(4497,'at_commander_dawnforge'),(1526,'at_ring_of_law');
+INSERT INTO `areatrigger_scripts` VALUES (522,'at_twiggy_flathead'),(4560,'at_legion_teleporter'),(4497,'at_commander_dawnforge'),(1526,'at_ring_of_law'),(4853,'at_madrigosa');
 /*!40000 ALTER TABLE `areatrigger_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-06-12 23:47:21
+-- Dump completed on 2009-07-11 19:38:20
