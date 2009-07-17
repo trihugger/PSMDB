@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.35, for Win32 (ia32)
+-- MySQL dump 10.13  Distrib 5.1.36, for Win32 (ia32)
 --
 -- Host: localhost    Database: slk
 -- ------------------------------------------------------
--- Server version	5.1.35
+-- Server version	5.1.36
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `db_version`;
 CREATE TABLE `db_version` (
   `version` varchar(120) DEFAULT NULL,
   `creature_ai_version` varchar(120) DEFAULT NULL,
-  `required_8158_01_mangos_playercreateinfo_action` bit(1) DEFAULT NULL
+  `required_8191_01_mangos_spell_affect` bit(1) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Used DB version notes';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -35,7 +35,7 @@ CREATE TABLE `db_version` (
 
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` VALUES ('PSDB WotLK (228)','PSDB EventAI',NULL);
+INSERT INTO `db_version` VALUES ('PSDB WotLK (229)','PSDB EventAI',NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-07-11 19:37:24
+-- Dump completed on 2009-07-17 20:10:21
