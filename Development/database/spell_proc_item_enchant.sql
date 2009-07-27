@@ -16,27 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `spell_threat`
+-- Table structure for table `spell_proc_item_enchant`
 --
 
-DROP TABLE IF EXISTS `spell_threat`;
+DROP TABLE IF EXISTS `spell_proc_item_enchant`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `spell_threat` (
+CREATE TABLE `spell_proc_item_enchant` (
   `entry` mediumint(8) unsigned NOT NULL,
-  `Threat` smallint(6) NOT NULL,
+  `ppmRate` float NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `spell_threat`
+-- Dumping data for table `spell_proc_item_enchant`
 --
 
-LOCK TABLES `spell_threat` WRITE;
-/*!40000 ALTER TABLE `spell_threat` DISABLE KEYS */;
-INSERT INTO `spell_threat` VALUES (1672,180),(9881,207),(11556,43),(11567,145),(11597,261),(11601,315),(11775,395),(14921,415),(24394,580),(24583,5),(25286,175),(25288,355),(25289,60),(78,20),(284,39),(285,59),(1608,78),(11564,98),(11565,118),(11566,137),(7386,100),(7405,140),(8380,180),(11596,220),(1715,61),(7372,101),(7373,141),(6572,155),(6574,195),(7379,235),(11600,275),(23922,160),(23923,190),(23924,220),(23925,250),(6809,89),(8972,118),(9745,148),(9880,178),(770,108),(17735,200),(17750,300),(17751,450),(17752,600),(20736,100),(20243,101),(30016,101),(30022,101),(29707,196),(30324,220),(26996,176),(25258,286),(30356,323),(25269,400),(30357,483),(29704,230),(25225,300),(20569,100),(25231,130),(33745,285),(16857,108),(6343,17),(8198,40),(8204,64),(8205,96),(11580,143),(11581,180),(25264,215),(33878,129),(33986,180),(33987,232),(20925,20),(20927,30),(20928,40),(27179,54),(2139,300);
-/*!40000 ALTER TABLE `spell_threat` ENABLE KEYS */;
+LOCK TABLES `spell_proc_item_enchant` WRITE;
+/*!40000 ALTER TABLE `spell_proc_item_enchant` DISABLE KEYS */;
+INSERT INTO `spell_proc_item_enchant` VALUES (8034,9),(8680,8.5714),(13218,21.4286);
+/*!40000 ALTER TABLE `spell_proc_item_enchant` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-07-27 20:29:15
+-- Dump completed on 2009-07-27 20:29:05
