@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.34, for Win32 (ia32)
+-- MySQL dump 10.11
 --
--- Host: localhost    Database: slk
+-- Host: localhost    Database: mangos
 -- ------------------------------------------------------
--- Server version	5.1.34
+-- Server version	5.1.32-community
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,8 +20,8 @@
 --
 
 DROP TABLE IF EXISTS `pool_creature`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
 CREATE TABLE `pool_creature` (
   `guid` int(10) unsigned NOT NULL DEFAULT '0',
   `pool_entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -30,7 +30,7 @@ CREATE TABLE `pool_creature` (
   PRIMARY KEY (`pool_entry`,`guid`),
   KEY `idx_guid` (`guid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
+SET character_set_client = @saved_cs_client;
 
 --
 -- Dumping data for table `pool_creature`
@@ -38,6 +38,7 @@ CREATE TABLE `pool_creature` (
 
 LOCK TABLES `pool_creature` WRITE;
 /*!40000 ALTER TABLE `pool_creature` DISABLE KEYS */;
+INSERT INTO `pool_creature` VALUES (875142,1,0,''),(148695,1,0,'');
 /*!40000 ALTER TABLE `pool_creature` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-05-29 12:58:07
+-- Dump completed on 2009-08-03 19:48:34

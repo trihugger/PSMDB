@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.34, for Win32 (ia32)
+-- MySQL dump 10.11
 --
--- Host: localhost    Database: slk
+-- Host: localhost    Database: mangos
 -- ------------------------------------------------------
--- Server version	5.1.34
+-- Server version	5.1.32-community
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,15 +20,15 @@
 --
 
 DROP TABLE IF EXISTS `pool_template`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
 CREATE TABLE `pool_template` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Pool entry',
   `max_limit` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Max number of objects (0) is no limit',
   `description` varchar(255) NOT NULL,
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
+SET character_set_client = @saved_cs_client;
 
 --
 -- Dumping data for table `pool_template`
@@ -36,6 +36,7 @@ CREATE TABLE `pool_template` (
 
 LOCK TABLES `pool_template` WRITE;
 /*!40000 ALTER TABLE `pool_template` DISABLE KEYS */;
+INSERT INTO `pool_template` VALUES (1,1,'1');
 /*!40000 ALTER TABLE `pool_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-05-20 17:49:45
+-- Dump completed on 2009-08-03 19:48:49
