@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.30, for Win32 (ia32)
+-- MySQL dump 10.13  Distrib 5.1.37, for Win32 (ia32)
 --
 -- Host: localhost    Database: slk
 -- ------------------------------------------------------
--- Server version	5.1.30
+-- Server version	5.1.37
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,15 +20,15 @@
 --
 
 DROP TABLE IF EXISTS `spell_learn_spell`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `spell_learn_spell` (
   `entry` smallint(5) unsigned NOT NULL DEFAULT '0',
   `SpellID` smallint(5) unsigned NOT NULL DEFAULT '0',
   `Active` tinyint(3) unsigned NOT NULL DEFAULT '1',
   PRIMARY KEY (`entry`,`SpellID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Item System';
-SET character_set_client = @saved_cs_client;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `spell_learn_spell`
@@ -36,7 +36,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `spell_learn_spell` WRITE;
 /*!40000 ALTER TABLE `spell_learn_spell` DISABLE KEYS */;
-INSERT INTO `spell_learn_spell` VALUES (5784,33388,1),(13819,33388,1),(2457,21156,0),(23161,33391,1),(23214,33391,1),(1066,5421,0),(783,5419,0),(768,3025,0),(71,7376,0),(34767,33391,1),(34769,33388,1),(53428,53341,1),(53428,53343,1),(2458,7381,0),(5487,1178,0),(5487,21178,0),(9634,9635,0),(9634,21178,0),(17002,24867,0),(24858,24905,0),(24866,24864,0),(33872,47179,0),(33873,47180,0),(33891,5420,0),(33891,34123,0),(33943,33948,0),(33943,34090,1),(33943,34764,0),(40123,40121,0),(40123,40122,0),(58984,21009,1);
+INSERT INTO `spell_learn_spell` VALUES (5784,33388,1),(13819,33388,1),(23161,33391,1),(23214,33391,1),(34767,33391,1),(34769,33388,1),(53428,53341,1),(53428,53343,1),(17002,24867,0),(24866,24864,0),(33872,47179,0),(33873,47180,0),(33943,34090,1),(58984,21009,1);
 /*!40000 ALTER TABLE `spell_learn_spell` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-01-13 16:48:10
+-- Dump completed on 2009-08-28 22:56:30
