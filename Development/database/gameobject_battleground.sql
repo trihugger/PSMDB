@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.39, for Win32 (ia32)
+-- MySQL dump 10.11
 --
--- Host: localhost    Database: slk
+-- Host: localhost    Database: mangos
 -- ------------------------------------------------------
--- Server version	5.1.39-community
+-- Server version	5.1.32-community
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,15 +20,15 @@
 --
 
 DROP TABLE IF EXISTS `gameobject_battleground`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
 CREATE TABLE `gameobject_battleground` (
   `guid` int(10) unsigned NOT NULL COMMENT 'GameObject''s GUID',
   `event1` tinyint(3) unsigned NOT NULL COMMENT 'main event',
   `event2` tinyint(3) unsigned NOT NULL COMMENT 'sub event',
   PRIMARY KEY (`guid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='GameObject battleground indexing system';
-/*!40101 SET character_set_client = @saved_cs_client */;
+SET character_set_client = @saved_cs_client;
 
 --
 -- Dumping data for table `gameobject_battleground`
@@ -36,6 +36,7 @@ CREATE TABLE `gameobject_battleground` (
 
 LOCK TABLES `gameobject_battleground` WRITE;
 /*!40000 ALTER TABLE `gameobject_battleground` DISABLE KEYS */;
+INSERT INTO `gameobject_battleground` VALUES (1513683,0,0),(1513684,1,0),(1513696,254,0),(1513695,254,0),(1513694,254,0),(1513693,254,0),(1513692,254,0),(1513691,254,0),(1513701,0,3),(1513697,0,3),(1513703,0,1),(1513698,0,1),(1513704,0,0),(1513702,0,4),(1513699,0,4),(1513700,0,2),(1513709,1,3),(1513705,1,3),(1513711,1,1),(1513706,1,1),(1513712,1,0),(1513710,1,4),(1513707,1,4),(1513708,1,2),(1513717,2,3),(1513713,2,3),(1513719,2,1),(1513714,2,1),(1513720,2,0),(1513718,2,4),(1513715,2,4),(1513716,2,2),(1513725,3,3),(1513721,3,3),(1513727,3,1),(1513722,3,1),(1513728,3,0),(1513726,3,4),(1513723,3,4),(1513724,3,2),(1513733,4,3),(1513729,4,3),(1513735,4,1),(1513730,4,1),(1513736,4,0),(1513734,4,4),(1513731,4,4),(1513732,4,2),(1513737,254,0),(1513738,254,0),(1513741,0,0),(1513740,0,0),(1513739,0,0),(1513744,1,0),(1513743,1,0),(1513742,1,0),(1513747,2,0),(1513746,2,0),(1513745,2,0),(1513750,3,0),(1513749,3,0),(1513748,3,0),(1513753,0,1),(1513752,0,1),(1513751,0,1),(1513756,1,1),(1513755,1,1),(1513754,1,1),(1513759,2,1),(1513758,2,1),(1513757,2,1),(1513762,3,1),(1513761,3,1),(1513760,3,1),(1513765,0,2),(1513764,0,2),(1513763,0,2),(1513768,1,2),(1513767,1,2),(1513766,1,2),(1513771,2,2),(1513770,2,2),(1513769,2,2),(1513774,3,2),(1513773,3,2),(1513772,3,2),(1513775,4,4),(1513776,4,0),(1513777,4,1),(1513778,4,2),(1513779,4,3),(1513784,254,0),(1513785,254,0),(1513787,254,0),(1513786,254,0),(1513791,253,0),(1513790,253,0),(1513793,254,0),(1513792,254,0),(1513797,253,0),(1513796,253,0),(1513799,254,0),(1513798,254,0),(1513801,253,0),(1513800,253,0);
 /*!40000 ALTER TABLE `gameobject_battleground` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-10-06 22:32:03
+-- Dump completed on 2009-10-07 21:19:14
