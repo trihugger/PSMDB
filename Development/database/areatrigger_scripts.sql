@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.39, for Win32 (ia32)
+-- MySQL dump 10.13  Distrib 5.1.40, for Win32 (ia32)
 --
 -- Host: localhost    Database: slk
 -- ------------------------------------------------------
--- Server version	5.1.39-community
+-- Server version	5.1.40-community
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -35,7 +35,7 @@ CREATE TABLE `areatrigger_scripts` (
 
 LOCK TABLES `areatrigger_scripts` WRITE;
 /*!40000 ALTER TABLE `areatrigger_scripts` DISABLE KEYS */;
-INSERT INTO `areatrigger_scripts` VALUES (522,'at_twiggy_flathead'),(4560,'at_legion_teleporter'),(4497,'at_commander_dawnforge'),(1526,'at_ring_of_law'),(4853,'at_madrigosa'),(3066,'at_ravenholdt'),(4871,'at_warsong_grainery'),(4872,'at_torp_farm'),(4873,'at_warsong_slaughterhouse'),(5140,'at_svala_intro');
+INSERT INTO `areatrigger_scripts` VALUES (522,'at_twiggy_flathead'),(4560,'at_legion_teleporter'),(4497,'at_commander_dawnforge'),(1526,'at_ring_of_law'),(4853,'at_madrigosa'),(3066,'at_ravenholdt'),(4871,'at_warsong_grainery'),(4872,'at_torp_farm'),(4873,'at_warsong_slaughterhouse'),(5140,'at_svala_intro'),(4591,'at_coilfang_waterfall');
 /*!40000 ALTER TABLE `areatrigger_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-10-09 21:45:27
+-- Dump completed on 2009-11-02 22:02:17
