@@ -1,0 +1,52 @@
+-- redone Onyxia's lair spawn template drop etc..
+-- creature_onkill reputation fix
+-- npc vendor flags
+-- dmg redone part3
+-- GO type 31 fix
+-- missing and fixed items
+-- spell 69386, 69388 at trainer
+-- Gundrak - Enter lvl requirment
+-- other areatrigger teleport better name
+-- sd2 r1498 support for c29811 q12864 / proper db fix related / removed workaround
+-- sd2 r1502 support for c24040 q11483/ proper db fix related / removed workaround
+-- sd2 r1496 c30172,30173 mob_ahnkahar_egg / remove sd2 scriptname since EventAI done
+-- sd2 support for prince keleseth / remove custom EventAI
+-- misc achievement_reward cleanup/missin text and subject
+-- base spawnmask/phasemask map 649/650
+-- few quest method/specialflags fix
+-- c33927 spawn
+-- fix required target item 38697
+-- money drop c22993
+-- c29454 lyin
+-- c27285 fly
+-- redone spawn c30184 fix no loot possible/fallin trough ground after kill
+-- same zone redone spawn c30480
+-- add missin drakuru brazier
+-- spawn Dalaran forge
+-- spawn c35073 farseer eannu
+-- GO 185921 crystal forge relocation
+-- c32930 Kologarn/ fix not attackable
+-- spawn/template c29728 Walter Soref / locksmith
+-- faction fix c29725 Benik Boltshear / locksmith
+
+-- q14108 Get Kraken! / script Hurl Spears at North Sea Kraken / Kraken Tooth drop
+-- q11133 Discrediting the Deserters / script theramore guards
+-- q11670 It Was The Orcs, Honest! / plant the Warsong Banner in the corpse of Magmothregar.
+-- q3367 Suntara Stones / Help Dorius get back to Ironforge
+-- q3372 Release Them / Find the Mysterious Artifact being guarded by the Twilight's Hammer Idolaters in the northwest quadrant of the Searing Gorge and bring it to the Altar of Suntara in the Slag Pit.
+-- q3566 Rise, Obsidion! / script event Lathoric the Black and Obsidion
+-- q13058 Changing the Wind's Course / base script and phased stuff / morph in Stormhoof part req core support
+-- q13037 Memories of Stormhoof / add temp quest at Chieftain Swiftspear for completion
+-- q13038 Distortions in Time / Use the Chieftain's Totem to close 4 Frostfloe Rifts,
+-- required races for q14167 14168 14169 14170 14171 14174 14176
+-- q14142 14096 You've Really Done It This Time, Kul / Kul the Reckless & Captive Aspirant freed script
+-- q13810 q13813 q13789 q13791 Taking Battle To The Enemy / Icecrow scourge KillCredit
+-- q13476, 13478/ BG quests base template update required 6 BG mark / text part
+-- q11253 Sniff Out the Enemy / script "Use the Plaguehound Leash near the plaguehound cages at Vengeance Landing and look for clues at the location you're led to by the Plaguehound Tracker."
+-- q14141 q14090 Gormok Wants His Snobolds / script "Use the Weighted Net to capture 8 Snowblind Followers"
+-- q12998 The Heart of the Storm / script "try to prevent Overseer Narvir from obtaining the Heart of the Storm."
+-- Changes to all Profession Trainers - Nett & Rog360
+-- Dupe door in Black Temple
+-- Item Template fixes by Micks
+-- bg quests by alein/Mephilith
+-- MSCS SVN 268+ Fixes
