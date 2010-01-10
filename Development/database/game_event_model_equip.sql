@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: mangos
 -- ------------------------------------------------------
--- Server version	5.0.51b-community-nt
+-- Server version	5.1.32-community
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,11 +23,11 @@ DROP TABLE IF EXISTS `game_event_model_equip`;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
 CREATE TABLE `game_event_model_equip` (
-  `guid` int(10) unsigned NOT NULL default '0',
-  `modelid` mediumint(8) unsigned NOT NULL default '0',
-  `equipment_id` mediumint(8) unsigned NOT NULL default '0',
-  `event` smallint(5) unsigned NOT NULL default '0',
-  PRIMARY KEY  (`guid`)
+  `guid` int(10) unsigned NOT NULL DEFAULT '0',
+  `modelid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `equipment_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `event` smallint(5) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`guid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
 
@@ -37,7 +37,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `game_event_model_equip` WRITE;
 /*!40000 ALTER TABLE `game_event_model_equip` DISABLE KEYS */;
-INSERT INTO `game_event_model_equip` VALUES (52680,0,504,27),(52689,0,504,27),(53378,0,504,27),(53379,0,504,27),(53381,0,504,27),(53382,0,504,27),(62570,0,504,27),(62577,0,504,27),(85048,0,504,27),(85050,0,504,27);
+INSERT INTO `game_event_model_equip` VALUES (13018,0,504,27),(13019,0,504,27),(13020,0,504,27),(13021,0,504,27),(13022,0,504,27),(13023,0,504,27),(13024,0,504,27),(13025,0,504,27),(13026,0,504,27),(13027,0,504,27);
 /*!40000 ALTER TABLE `game_event_model_equip` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2008-10-10 19:29:49
+-- Dump completed on 2010-01-10 20:52:07
