@@ -1,25 +1,24 @@
-PROJECT SILVERMOON MANGOS DATABASE
+--------------------
+Supported_Revisions
+--------------------
+- Client WoW 3.3.0 11159
+- Core MaNGOS: r9253 & ScriptDev2: r1555
+- Database PSDB WotLK - rev 285
+
+--------
+Contacts
+--------
+PROJECT SILVERMOON WOTLK MANGOS DATABASE
 
 Home Page: http://project-silvermoon.net/
 SVN: http://svn.assembla.com/svn/psmdb_wotlk
-Single SQL Path : http://svn.assembla.com/svn/psmdb_wotlk/Development/database
-Milestones & Changesets Path : http://svn.assembla.com/svn/psmdb_wotlk
-Server Binaries: http://project-silvermoon.net/index.php?showtopic=71
 
-For Changesets & Milestones, we have moved all of those too our secondary
-svn, which can be located at :
+-------
+TEAM
+-------
 
-http://svn.assembla.com/svn/PSDBM/
-
-The reason : we want our main svn to house the single sql files & .bat
-importer tool, as this is the proper use of a true svn, we feel that full releases
-are "extras". 
-
-As for changesets, We no longer have the time,space or man power to do this.You will have to Backup your custom content, Update from svn and add your custom content back to your db.
-
-Also, the old svn setup was over 300+ megs, which was way to much for a download,
-this allows us too manage the svn better.
-
- Thank you - Imperium 
-
- ~Project Silvermoon Staff
+Rog360      - Project Leader
+SADraco     - Database Team
+BrainDedd   - Database Team
+MSCS        - Database Team
+Micks       - Database Team

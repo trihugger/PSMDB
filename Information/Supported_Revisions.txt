@@ -1,3 +1,0 @@
-WoW Client 3.3.0a
-MaNGOS: r9250
-Scriptdev2: r1555

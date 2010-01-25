@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: mangos
 -- ------------------------------------------------------
--- Server version	5.1.32-community
+-- Server version	5.1.42-community
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -42,7 +42,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `gossip_scripts` WRITE;
 /*!40000 ALTER TABLE `gossip_scripts` DISABLE KEYS */;
-INSERT INTO `gossip_scripts` VALUES (20000,0,7,10814,10,0,0,0,0,0),(50000,0,15,47575,0,0,0,0,0,0);
+INSERT INTO `gossip_scripts` VALUES (20000,0,7,10814,10,0,0,0,0,0),(50000,0,15,47575,0,0,0,0,0,0),(50001,0,15,43136,1,0,0,0,0,0),(6944,0,15,53310,1,0,0,0,0,0);
 /*!40000 ALTER TABLE `gossip_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-01-10 20:53:51
+-- Dump completed on 2010-01-25 22:58:55
