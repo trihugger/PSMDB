@@ -12,13 +12,15 @@ PROJECT SILVERMOON WOTLK MANGOS DATABASE
 
 Home Page: http://project-silvermoon.net/
 SVN: http://svn.assembla.com/svn/psmdb_wotlk
+Admin E-mail: Cobra@Project-Silvermoon.net
 
 -------
 TEAM
 -------
 
-Rog360      - Project Leader
-SADraco     - Database Team
-BrainDedd   - Database Team
-MSCS        - Database Team
-Micks       - Database Team
+Rog360     	- Project Leader
+SADraco   	- Database Team
+BrainDedd 	- Database Team
+MSCS       	- Database Team
+Micks       	- Database Team
+Mephilith 	- Database (Major) Contributor
