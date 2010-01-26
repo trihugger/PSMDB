@@ -3,7 +3,7 @@ Supported_Revisions
 --------------------
 - Client WoW 3.3.0 11159
 - Core MaNGOS: r9253 & ScriptDev2: r1555
-- Database PSDB WotLK - rev 285
+- Database PSDB WotLK - rev 286
 
 --------
 Contacts
