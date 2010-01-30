@@ -1,18 +1,17 @@
 --------------------
 Supported_Revisions
 --------------------
-- Client WoW 3.3.0 11159
-- Core MaNGOS: r9253 & ScriptDev2: r1555
-- Database PSDB WotLK - rev 286
+- WoW Client v3.3.0.11159
+- MaNGOS r9262 & ScriptDev2 r1556
 
 --------
 Contacts
 --------
 PROJECT SILVERMOON WOTLK MANGOS DATABASE
 
-Home Page: http://project-silvermoon.net/
-SVN: http://svn.assembla.com/svn/psmdb_wotlk
-Admin E-mail: Cobra@Project-Silvermoon.net
+Home Page:	http://project-silvermoon.net/
+SVN: 		http://svn.assembla.com/svn/psmdb_wotlk
+Admin E-mail:	cobra@project-silvermoon.net
 
 -------
 TEAM

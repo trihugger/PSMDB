@@ -1,6 +1,6 @@
--- MySQL dump 10.11
+-- MySQL dump 10.13  Distrib 5.1.42, for Win32 (ia32)
 --
--- Host: localhost    Database: mangos
+-- Host: localhost    Database: slk
 -- ------------------------------------------------------
 -- Server version	5.1.42-community
 
@@ -20,15 +20,15 @@
 --
 
 DROP TABLE IF EXISTS `db_version`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `db_version` (
   `version` varchar(120) DEFAULT NULL,
   `creature_ai_version` varchar(120) DEFAULT NULL,
   `cache_id` int(10) DEFAULT '0',
-  `required_9244_02_mangos_spell_chain` bit(1) DEFAULT NULL
+  `required_9262_01_mangos_quest_template` bit(1) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Used DB version notes';
-SET character_set_client = @saved_cs_client;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `db_version`
@@ -36,7 +36,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` VALUES ('PSDB WotLK - rev 286 - client 3.3.0 (11159) & core 9253_sd2_1555','PSDB EventAI & ACID 3.0.1',286,NULL);
+INSERT INTO `db_version` VALUES ('PSDB WotLK (r288) for 3.3.0a (Core r9262 / SD2 r1556)','PSDB EventAI & ACID 3.0.1',286,NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-01-26  1:59:48
+-- Dump completed on 2010-01-30 16:47:58
