@@ -1,8 +1,8 @@
--- MySQL dump 10.11
+-- MySQL dump 10.13  Distrib 5.1.43, for Win32 (ia32)
 --
--- Host: localhost    Database: silvermoon
+-- Host: localhost    Database: slk
 -- ------------------------------------------------------
--- Server version	5.0.51b
+-- Server version	5.1.43-community
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,10 +20,10 @@
 --
 
 DROP TABLE IF EXISTS `locales_quest`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `locales_quest` (
-  `entry` mediumint(8) unsigned NOT NULL default '0',
+  `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `Title_loc1` text,
   `Title_loc2` text,
   `Title_loc3` text,
@@ -72,6 +72,14 @@ CREATE TABLE `locales_quest` (
   `EndText_loc6` text,
   `EndText_loc7` text,
   `EndText_loc8` text,
+  `CompletedText_loc1` text,
+  `CompletedText_loc2` text,
+  `CompletedText_loc3` text,
+  `CompletedText_loc4` text,
+  `CompletedText_loc5` text,
+  `CompletedText_loc6` text,
+  `CompletedText_loc7` text,
+  `CompletedText_loc8` text,
   `ObjectiveText1_loc1` text,
   `ObjectiveText1_loc2` text,
   `ObjectiveText1_loc3` text,
@@ -104,9 +112,9 @@ CREATE TABLE `locales_quest` (
   `ObjectiveText4_loc6` text,
   `ObjectiveText4_loc7` text,
   `ObjectiveText4_loc8` text,
-  PRIMARY KEY  (`entry`)
+  PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-SET character_set_client = @saved_cs_client;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `locales_quest`
@@ -126,4 +134,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2008-08-08 17:29:17
+-- Dump completed on 2010-02-07 14:55:43
