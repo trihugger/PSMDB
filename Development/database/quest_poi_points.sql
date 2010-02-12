@@ -1,6 +1,6 @@
--- MySQL dump 10.13  Distrib 5.1.42, for Win32 (ia32)
+-- MySQL dump 10.11
 --
--- Host: localhost    Database: slk
+-- Host: localhost    Database: mangos
 -- ------------------------------------------------------
 -- Server version	5.1.42-community
 
@@ -20,8 +20,8 @@
 --
 
 DROP TABLE IF EXISTS `quest_poi_points`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
 CREATE TABLE `quest_poi_points` (
   `questId` int(11) unsigned NOT NULL DEFAULT '0',
   `objIndex` int(11) NOT NULL DEFAULT '0',
@@ -29,7 +29,7 @@ CREATE TABLE `quest_poi_points` (
   `y` int(11) NOT NULL DEFAULT '0',
   KEY `idx` (`questId`,`objIndex`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
+SET character_set_client = @saved_cs_client;
 
 --
 -- Dumping data for table `quest_poi_points`
@@ -37,6 +37,7 @@ CREATE TABLE `quest_poi_points` (
 
 LOCK TABLES `quest_poi_points` WRITE;
 /*!40000 ALTER TABLE `quest_poi_points` DISABLE KEYS */;
+INSERT INTO `quest_poi_points` VALUES (9399,0,-506,4655),(9399,0,-450,4669),(9399,0,-448,4755),(9399,0,-507,4915),(9399,0,-658,4848),(9399,0,-700,4781),(9399,0,-679,4754),(9399,-1,96,4347);
 /*!40000 ALTER TABLE `quest_poi_points` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-01-25 23:53:32
+-- Dump completed on 2010-02-12 20:21:48
