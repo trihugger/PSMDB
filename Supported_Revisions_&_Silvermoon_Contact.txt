@@ -2,7 +2,7 @@
 Supported_Revisions
 --------------------
 - WoW Client v3.3.2.11403
-- MaNGOS r9539 & ScriptDev2 r1632
+- MaNGOS r9539 & ScriptDev2 r1637
 
 --------
 Contacts
