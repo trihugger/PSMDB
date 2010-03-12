@@ -36,7 +36,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` VALUES ('PSDB WotLK (r297) for 3.3.2 (Core r9539 / SD2 r1632)','PSDB EventAI & ACID 3.0.3',297,NULL);
+INSERT INTO `db_version` VALUES ('PSDB WotLK (r298) for 3.3.2 (Core r9539 / SD2 r1637)','PSDB EventAI & ACID 3.0.3',298,NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
