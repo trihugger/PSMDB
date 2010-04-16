@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.30, for Win32 (ia32)
+-- MySQL dump 10.13  Distrib 5.1.45, for Win32 (ia32)
 --
 -- Host: localhost    Database: slk
 -- ------------------------------------------------------
--- Server version	5.1.30
+-- Server version	5.1.45-community
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,10 +20,11 @@
 --
 
 DROP TABLE IF EXISTS `locales_achievement_reward`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `locales_achievement_reward` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `gender` tinyint(3) NOT NULL DEFAULT '2',
   `subject_loc1` varchar(100) NOT NULL DEFAULT '',
   `subject_loc2` varchar(100) NOT NULL DEFAULT '',
   `subject_loc3` varchar(100) NOT NULL DEFAULT '',
@@ -40,9 +41,9 @@ CREATE TABLE `locales_achievement_reward` (
   `text_loc6` text,
   `text_loc7` text,
   `text_loc8` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`entry`,`gender`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-SET character_set_client = @saved_cs_client;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `locales_achievement_reward`
@@ -62,4 +63,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-01-06 18:20:05
+-- Dump completed on 2010-04-16 13:53:42
