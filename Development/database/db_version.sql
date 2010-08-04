@@ -36,7 +36,7 @@ CREATE TABLE `db_version` (
 
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` VALUES ('PSDB WotLK (r320) for 3.3.5 (Core r10252 / SD2 r1741)','PSDB EventAI & ACID 3.0.3',320,NULL);
+INSERT INTO `db_version` VALUES ('PSDB WotLK (r322) for 3.3.5a (Core r10314 / SD2 r1754)','PSDB EventAI & ACID 3.0.3',322,NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
