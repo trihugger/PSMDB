@@ -1,8 +1,8 @@
--- MySQL dump 10.11
+-- MySQL dump 10.13  Distrib 5.1.49, for Win64 (unknown)
 --
--- Host: localhost    Database: Scriptdev2
+-- Host: localhost    Database: slk_sd2
 -- ------------------------------------------------------
--- Server version	5.1.42-community
+-- Server version	5.1.49-community
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,8 +20,8 @@
 --
 
 DROP TABLE IF EXISTS `custom_texts`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `custom_texts` (
   `entry` mediumint(8) NOT NULL,
   `content_default` text NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE `custom_texts` (
   `comment` text,
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Custom Texts';
-SET character_set_client = @saved_cs_client;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `custom_texts`
@@ -52,12 +52,45 @@ LOCK TABLES `custom_texts` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `gossip_texts`
+--
+
+DROP TABLE IF EXISTS `gossip_texts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `gossip_texts` (
+  `entry` mediumint(8) NOT NULL,
+  `content_default` text NOT NULL,
+  `content_loc1` text,
+  `content_loc2` text,
+  `content_loc3` text,
+  `content_loc4` text,
+  `content_loc5` text,
+  `content_loc6` text,
+  `content_loc7` text,
+  `content_loc8` text,
+  `comment` text,
+  PRIMARY KEY (`entry`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Gossip Texts';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `gossip_texts`
+--
+
+LOCK TABLES `gossip_texts` WRITE;
+/*!40000 ALTER TABLE `gossip_texts` DISABLE KEYS */;
+INSERT INTO `gossip_texts` VALUES (-3608000,'Activate the crystals when we get in trouble, right?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'sinclari GOSSIP_ITEM_INTRO'),(-3608001,'Get your people to safety, we\'ll keep the Blue Dragonflight\'s forces at bay.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'sinclari GOSSIP_ITEM_START');
+/*!40000 ALTER TABLE `gossip_texts` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `script_localized_texts`
 --
 
 DROP TABLE IF EXISTS `script_localized_texts`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `script_localized_texts` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Identifier',
   `locale_1` varchar(255) NOT NULL DEFAULT '',
@@ -71,7 +104,7 @@ CREATE TABLE `script_localized_texts` (
   `comment` varchar(255) NOT NULL DEFAULT '' COMMENT 'Text Comment',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Localized Script Text';
-SET character_set_client = @saved_cs_client;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `script_localized_texts`
@@ -88,8 +121,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `script_texts`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `script_texts` (
   `entry` mediumint(8) NOT NULL,
   `content_default` text NOT NULL,
@@ -108,7 +141,7 @@ CREATE TABLE `script_texts` (
   `comment` text,
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Script Texts';
-SET character_set_client = @saved_cs_client;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `script_texts`
@@ -125,8 +158,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `script_waypoint`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `script_waypoint` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'creature_template entry',
   `pointid` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -137,7 +170,7 @@ CREATE TABLE `script_waypoint` (
   `point_comment` text,
   PRIMARY KEY (`entry`,`pointid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Script Creature waypoints';
-SET character_set_client = @saved_cs_client;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `script_waypoint`
@@ -154,12 +187,12 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `sd2_db_version`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `sd2_db_version` (
   `version` varchar(255) NOT NULL DEFAULT '' COMMENT 'Database version string'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-SET character_set_client = @saved_cs_client;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `sd2_db_version`
@@ -167,7 +200,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `sd2_db_version` WRITE;
 /*!40000 ALTER TABLE `sd2_db_version` DISABLE KEYS */;
-INSERT INTO `sd2_db_version` VALUES ('ScriptDev2 (for MaNGOS 10153+) ');
+INSERT INTO `sd2_db_version` VALUES ('ScriptDev2 (for MaNGOS 10307+) ');
 /*!40000 ALTER TABLE `sd2_db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -180,4 +213,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-07-23 22:24:31
+-- Dump completed on 2010-08-04 20:32:12

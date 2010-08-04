@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.34, for Win32 (ia32)
+-- MySQL dump 10.13  Distrib 5.1.49, for Win64 (unknown)
 --
 -- Host: localhost    Database: slk
 -- ------------------------------------------------------
--- Server version	5.1.34
+-- Server version	5.1.49-community
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -27,7 +27,8 @@ CREATE TABLE `pool_pool` (
   `mother_pool` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `chance` float NOT NULL DEFAULT '0',
   `description` varchar(255) NOT NULL,
-  PRIMARY KEY (`pool_id`,`mother_pool`)
+  PRIMARY KEY (`pool_id`),
+  KEY `pool_idx` (`mother_pool`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -49,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-05-20 17:49:42
+-- Dump completed on 2010-08-04 20:28:54
