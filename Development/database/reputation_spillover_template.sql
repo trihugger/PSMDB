@@ -16,30 +16,37 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `pool_gameobject`
+-- Table structure for table `reputation_spillover_template`
 --
 
-DROP TABLE IF EXISTS `pool_gameobject`;
+DROP TABLE IF EXISTS `reputation_spillover_template`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `pool_gameobject` (
-  `guid` int(10) unsigned NOT NULL DEFAULT '0',
-  `pool_entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `chance` float unsigned NOT NULL DEFAULT '0',
-  `description` varchar(255) NOT NULL,
-  PRIMARY KEY (`guid`),
-  KEY `pool_idx` (`pool_entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+CREATE TABLE `reputation_spillover_template` (
+  `faction` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT 'faction entry',
+  `faction1` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT 'faction to give spillover for',
+  `rate_1` float NOT NULL DEFAULT '0' COMMENT 'the given rep points * rate',
+  `rank_1` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT 'max rank, above this will not give any spillover',
+  `faction2` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `rate_2` float NOT NULL DEFAULT '0',
+  `rank_2` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `faction3` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `rate_3` float NOT NULL DEFAULT '0',
+  `rank_3` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `faction4` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `rate_4` float NOT NULL DEFAULT '0',
+  `rank_4` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`faction`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Reputation spillover reputation gain';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `pool_gameobject`
+-- Dumping data for table `reputation_spillover_template`
 --
 
-LOCK TABLES `pool_gameobject` WRITE;
-/*!40000 ALTER TABLE `pool_gameobject` DISABLE KEYS */;
-INSERT INTO `pool_gameobject` VALUES (52755,14,0,'Books'),(52756,14,0,'Books'),(52759,15,0,'Books'),(52760,16,0,'Books'),(52761,13,0,'Books'),(52971,17,0,'Books'),(52974,17,0,'Books'),(52975,13,0,'Books'),(52976,18,0,'Books'),(55433,13,0,'Books'),(55434,19,0,'Books'),(55435,14,0,'Books'),(55436,14,0,'Books'),(55437,15,0,'Books'),(55438,13,0,'Books'),(55439,13,0,'Books'),(55440,16,0,'Books'),(55441,15,0,'Books'),(55442,17,0,'Books'),(55443,18,0,'Books'),(55444,14,0,'Books'),(55445,19,0,'Books'),(55446,15,0,'Books'),(55447,19,0,'Books'),(55448,14,0,'Books'),(55449,17,0,'Books'),(55450,15,0,'Books'),(55451,17,0,'Books');
-/*!40000 ALTER TABLE `pool_gameobject` ENABLE KEYS */;
+LOCK TABLES `reputation_spillover_template` WRITE;
+/*!40000 ALTER TABLE `reputation_spillover_template` DISABLE KEYS */;
+/*!40000 ALTER TABLE `reputation_spillover_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -51,4 +58,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-08-04 20:28:36
+-- Dump completed on 2010-08-04 20:29:22
