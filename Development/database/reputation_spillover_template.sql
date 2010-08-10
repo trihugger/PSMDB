@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.49, for Win64 (unknown)
+-- MySQL dump 10.11
 --
--- Host: localhost    Database: slk
+-- Host: localhost    Database: mangos
 -- ------------------------------------------------------
--- Server version	5.1.49-community
+-- Server version	5.1.42-community
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,8 +20,8 @@
 --
 
 DROP TABLE IF EXISTS `reputation_spillover_template`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
 CREATE TABLE `reputation_spillover_template` (
   `faction` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT 'faction entry',
   `faction1` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT 'faction to give spillover for',
@@ -38,7 +38,7 @@ CREATE TABLE `reputation_spillover_template` (
   `rank_4` tinyint(3) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`faction`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Reputation spillover reputation gain';
-/*!40101 SET character_set_client = @saved_cs_client */;
+SET character_set_client = @saved_cs_client;
 
 --
 -- Dumping data for table `reputation_spillover_template`
@@ -46,6 +46,7 @@ CREATE TABLE `reputation_spillover_template` (
 
 LOCK TABLES `reputation_spillover_template` WRITE;
 /*!40000 ALTER TABLE `reputation_spillover_template` DISABLE KEYS */;
+INSERT INTO `reputation_spillover_template` VALUES (72,47,0.25,7,54,0.25,7,69,0.25,7,930,0.25,7),(47,72,0.25,7,54,0.25,7,69,0.25,7,930,0.25,7),(54,47,0.25,7,72,0.25,7,69,0.25,7,930,0.25,7),(69,47,0.25,7,54,0.25,7,72,0.25,7,930,0.25,7),(930,47,0.25,7,54,0.25,7,69,0.25,7,72,0.25,7),(68,76,0.25,7,81,0.25,7,530,0.25,7,911,0.25,7),(76,68,0.25,7,81,0.25,7,530,0.25,7,911,0.25,7),(81,76,0.25,7,68,0.25,7,530,0.25,7,911,0.25,7),(530,76,0.25,7,81,0.25,7,68,0.25,7,911,0.25,7),(911,76,0.25,7,81,0.25,7,530,0.25,7,68,0.25,7),(21,369,0.5,7,470,0.5,7,577,0.5,7,0,0,0),(369,21,0.5,7,470,0.5,7,577,0.5,7,0,0,0),(470,369,0.5,7,21,0.5,7,577,0.5,7,0,0,0),(577,369,0.5,7,470,0.5,7,21,0.5,7,0,0,0),(932,934,-1.1,7,935,0.5,4,0,0,0,0,0,0),(934,932,-1.1,7,935,0.5,4,0,0,0,0,0,0),(1050,1037,0.5,7,1068,0.5,7,1094,0.5,7,1126,0.5,7),(1068,1037,0.5,7,1050,0.5,7,1094,0.5,7,1126,0.5,7),(1094,1037,0.5,7,1050,0.5,7,1068,0.5,7,1126,0.5,7),(1126,1037,0.5,7,1050,0.5,7,1068,0.5,7,1094,0.5,7),(1064,1052,0.5,7,1067,0.5,7,1085,0.5,7,1124,0.5,7),(1067,1052,0.5,7,1064,0.5,7,1085,0.5,7,1124,0.5,7),(1085,1052,0.5,7,1064,0.5,7,1067,0.5,7,1124,0.5,7),(1124,1052,0.5,7,1064,0.5,7,1067,0.5,7,1085,0.5,7),(1104,1105,-2.2,7,0,0,0,0,0,0,0,0,0),(1105,1104,-2.2,7,0,0,0,0,0,0,0,0,0);
 /*!40000 ALTER TABLE `reputation_spillover_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -58,4 +59,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-08-04 20:29:22
+-- Dump completed on 2010-08-10 19:25:17
