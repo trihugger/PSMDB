@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.50, for Win64 (unknown)
+-- MySQL dump 10.11
 --
--- Host: localhost    Database: slk
+-- Host: localhost    Database: mangos
 -- ------------------------------------------------------
--- Server version	5.1.50-community
+-- Server version	5.1.42-community
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,8 +20,8 @@
 --
 
 DROP TABLE IF EXISTS `creature_model_race`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
 CREATE TABLE `creature_model_race` (
   `modelid` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `racemask` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -29,7 +29,7 @@ CREATE TABLE `creature_model_race` (
   `modelid_racial` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'option 2, explicit modelid',
   PRIMARY KEY (`modelid`,`racemask`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Model system';
-/*!40101 SET character_set_client = @saved_cs_client */;
+SET character_set_client = @saved_cs_client;
 
 --
 -- Dumping data for table `creature_model_race`
@@ -37,7 +37,7 @@ CREATE TABLE `creature_model_race` (
 
 LOCK TABLES `creature_model_race` WRITE;
 /*!40000 ALTER TABLE `creature_model_race` DISABLE KEYS */;
-INSERT INTO `creature_model_race` VALUES (892,690,0,8571),(2281,690,0,2289),(21243,690,0,21244),(20857,690,0,20872);
+INSERT INTO `creature_model_race` VALUES (892,690,0,8571),(2281,690,0,2289),(21243,690,0,21244),(20857,690,0,20872),(4587,1024,19638,0),(4588,1024,19637,0),(4589,1024,19636,0),(4590,1024,19639,0),(4587,128,37773,0),(4588,128,37768,0),(4589,128,37771,0),(4590,128,37769,0),(4587,2,37772,0),(4588,2,37767,0),(4589,2,37770,0),(4590,2,37766,0),(4587,4,37752,0),(4588,4,37750,0),(4589,4,37751,0),(4590,4,37749,0);
 /*!40000 ALTER TABLE `creature_model_race` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-08-20 22:16:45
+-- Dump completed on 2010-08-23 18:07:13
