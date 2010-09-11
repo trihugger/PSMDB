@@ -26,7 +26,7 @@ CREATE TABLE `db_version` (
   `version` varchar(120) DEFAULT NULL,
   `creature_ai_version` varchar(120) DEFAULT NULL,
   `cache_id` int(10) DEFAULT '0',
-  `required_10430_01_mangos_spell_chain` bit(1) DEFAULT NULL
+  `required_10457_01_mangos_spell_proc_event` bit(1) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Used DB version notes';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -36,7 +36,7 @@ CREATE TABLE `db_version` (
 
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` VALUES ('PSDB WotLK (r331) for 3.3.5a (Core r10430 / SD2 r1813)','PSDB EventAI & ACID 3.0.3',331,NULL);
+INSERT INTO `db_version` VALUES ('PSDB WotLK (r332) for 3.3.5a (Core r10457 / SD2 r1816)','PSDB EventAI & ACID 3.0.3',332,NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-09-03 16:12:04
+-- Dump completed on 2010-09-11 10:36:09
