@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.49, for Win64 (unknown)
+-- MySQL dump 10.11
 --
--- Host: localhost    Database: slk
+-- Host: localhost    Database: mangos
 -- ------------------------------------------------------
--- Server version	5.1.49-community
+-- Server version	5.1.42-community
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,8 +20,8 @@
 --
 
 DROP TABLE IF EXISTS `pool_gameobject`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
 CREATE TABLE `pool_gameobject` (
   `guid` int(10) unsigned NOT NULL DEFAULT '0',
   `pool_entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -30,7 +30,7 @@ CREATE TABLE `pool_gameobject` (
   PRIMARY KEY (`guid`),
   KEY `pool_idx` (`pool_entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
+SET character_set_client = @saved_cs_client;
 
 --
 -- Dumping data for table `pool_gameobject`
@@ -38,7 +38,7 @@ CREATE TABLE `pool_gameobject` (
 
 LOCK TABLES `pool_gameobject` WRITE;
 /*!40000 ALTER TABLE `pool_gameobject` DISABLE KEYS */;
-INSERT INTO `pool_gameobject` VALUES (52755,14,0,'Books'),(52756,14,0,'Books'),(52759,15,0,'Books'),(52760,16,0,'Books'),(52761,13,0,'Books'),(52971,17,0,'Books'),(52974,17,0,'Books'),(52975,13,0,'Books'),(52976,18,0,'Books'),(55433,13,0,'Books'),(55434,19,0,'Books'),(55435,14,0,'Books'),(55436,14,0,'Books'),(55437,15,0,'Books'),(55438,13,0,'Books'),(55439,13,0,'Books'),(55440,16,0,'Books'),(55441,15,0,'Books'),(55442,17,0,'Books'),(55443,18,0,'Books'),(55444,14,0,'Books'),(55445,19,0,'Books'),(55446,15,0,'Books'),(55447,19,0,'Books'),(55448,14,0,'Books'),(55449,17,0,'Books'),(55450,15,0,'Books'),(55451,17,0,'Books');
+INSERT INTO `pool_gameobject` VALUES (52755,14,0,'Books'),(52756,14,0,'Books'),(52759,15,0,'Books'),(52760,16,0,'Books'),(52761,13,0,'Books'),(52971,17,0,'Books'),(52974,17,0,'Books'),(52975,13,0,'Books'),(52976,18,0,'Books'),(55433,13,0,'Books'),(55434,19,0,'Books'),(55435,14,0,'Books'),(55436,14,0,'Books'),(55437,15,0,'Books'),(55438,13,0,'Books'),(55439,13,0,'Books'),(55440,16,0,'Books'),(55441,15,0,'Books'),(55442,17,0,'Books'),(55443,18,0,'Books'),(55444,14,0,'Books'),(55445,19,0,'Books'),(55446,15,0,'Books'),(55447,19,0,'Books'),(55448,14,0,'Books'),(55449,17,0,'Books'),(55450,15,0,'Books'),(55451,17,0,'Books'),(20877,20,0,'Kim\'jael\'s Equipment'),(20878,20,0,'Kim\'jael\'s Equipment'),(20879,20,0,'Kim\'jael\'s Equipment'),(20880,20,0,'Kim\'jael\'s Equipment'),(20881,20,0,'Kim\'jael\'s Equipment'),(20882,20,0,'Kim\'jael\'s Equipment'),(20883,20,0,'Kim\'jael\'s Equipment'),(20884,20,0,'Kim\'jael\'s Equipment'),(20885,20,0,'Kim\'jael\'s Equipment');
 /*!40000 ALTER TABLE `pool_gameobject` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-08-04 20:28:36
+-- Dump completed on 2010-09-13 18:33:32
