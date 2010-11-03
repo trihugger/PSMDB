@@ -16,28 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `db_version`
+-- Table structure for table `game_event_quest`
 --
 
-DROP TABLE IF EXISTS `db_version`;
+DROP TABLE IF EXISTS `game_event_quest`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `db_version` (
-  `version` varchar(120) DEFAULT NULL,
-  `creature_ai_version` varchar(120) DEFAULT NULL,
-  `cache_id` int(10) DEFAULT '0',
-  `required_10660_01_mangos_game_event_quest` bit(1) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Used DB version notes';
+CREATE TABLE `game_event_quest` (
+  `quest` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'entry from quest_template',
+  `event` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'entry from game_event',
+  PRIMARY KEY (`quest`,`event`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Game event system';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `db_version`
+-- Dumping data for table `game_event_quest`
 --
 
-LOCK TABLES `db_version` WRITE;
-/*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` VALUES ('PSDB WotLK (r341) for 3.3.5a (Core r10664 / SD2 r1853)','ACID 3.0.6 - Full Release for Mangos (3.3.5a Client)',341,NULL);
-/*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
+LOCK TABLES `game_event_quest` WRITE;
+/*!40000 ALTER TABLE `game_event_quest` DISABLE KEYS */;
+INSERT INTO `game_event_quest` VALUES (1657,12),(1658,12),(8149,11),(8150,11),(8311,12),(8312,12),(8322,12),(8353,12),(8354,12),(8355,12),(8356,12),(8357,12),(8358,12),(8359,12),(8360,12),(8373,12),(8860,6),(8861,6),(8897,8),(8898,8),(8899,8),(8900,8),(8901,8),(8902,8),(8903,8),(8904,8),(8979,8),(8980,8),(8982,8),(8983,8),(8984,8),(9024,8),(9025,8),(9027,8),(9028,8),(11117,26),(11118,26),(11120,26),(11122,26),(11131,12),(11135,12),(11219,12),(11220,12),(11318,26),(11321,26),(11356,12),(11360,12),(11361,12),(11407,26),(11408,26),(11409,26),(11412,26),(11431,26),(11439,12),(11440,12),(11441,26),(11446,26),(11449,12),(11450,12),(12752,17),(12753,17),(12772,17),(12775,17),(12777,17),(12782,17),(12783,17),(12784,17),(12808,17),(12811,17),(13483,9),(13484,9),(14199,116);
+/*!40000 ALTER TABLE `game_event_quest` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -49,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-11-03 16:15:45
+-- Dump completed on 2010-11-03 16:16:19
