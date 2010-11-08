@@ -23,5 +23,6 @@ BrainDedd 	- Database Team
 Hemie143       	- Database Team
 Micks       	- Database Team
 SADraco   	- Database Team
+Bisonte   	- Database Team
 Mephilith 	- Database (Major) Contributor
 Nett            - Database (Major) Contributor
