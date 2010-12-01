@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.52, for Win64 (unknown)
+-- MySQL dump 10.13  Distrib 5.1.53, for Win64 (unknown)
 --
 -- Host: localhost    Database: slk
 -- ------------------------------------------------------
--- Server version	5.1.52-community
+-- Server version	5.1.53-community
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -35,7 +35,7 @@ CREATE TABLE `scripted_event_id` (
 
 LOCK TABLES `scripted_event_id` WRITE;
 /*!40000 ALTER TABLE `scripted_event_id` DISABLE KEYS */;
-INSERT INTO `scripted_event_id` VALUES (11225,'event_taxi_stormcrow'),(2228,'event_spell_altar_boss_aggro'),(2268,'event_spell_altar_boss_aggro'),(8328,'npc_kroshius'),(2488,'event_go_zulfarrak_gong');
+INSERT INTO `scripted_event_id` VALUES (11225,'event_taxi_stormcrow'),(2228,'event_spell_altar_boss_aggro'),(2268,'event_spell_altar_boss_aggro'),(8328,'npc_kroshius'),(2488,'event_go_zulfarrak_gong'),(13513,'event_spell_soul_captured_credit'),(13514,'event_spell_soul_captured_credit'),(13515,'event_spell_soul_captured_credit'),(13516,'event_spell_soul_captured_credit');
 /*!40000 ALTER TABLE `scripted_event_id` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-11-19 17:22:26
+-- Dump completed on 2010-12-01 15:07:09
