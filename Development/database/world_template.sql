@@ -16,28 +16,26 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `db_version`
+-- Table structure for table `world_template`
 --
 
-DROP TABLE IF EXISTS `db_version`;
+DROP TABLE IF EXISTS `world_template`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `db_version` (
-  `version` varchar(120) DEFAULT NULL,
-  `creature_ai_version` varchar(120) DEFAULT NULL,
-  `cache_id` int(10) DEFAULT '0',
-  `required_11117_01_mangos_world_template` bit(1) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Used DB version notes';
+CREATE TABLE `world_template` (
+  `map` smallint(5) unsigned NOT NULL,
+  `ScriptName` varchar(128) NOT NULL DEFAULT '',
+  PRIMARY KEY (`map`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `db_version`
+-- Dumping data for table `world_template`
 --
 
-LOCK TABLES `db_version` WRITE;
-/*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` VALUES ('PSDB WotLK (r353) for 3.3.5a (Core r11117 / SD2 r1973)','ACID 3.0.7 - Full Release for Mangos (3.3.5a Client)',353,NULL);
-/*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
+LOCK TABLES `world_template` WRITE;
+/*!40000 ALTER TABLE `world_template` DISABLE KEYS */;
+/*!40000 ALTER TABLE `world_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -49,4 +47,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2011-02-11 17:13:20
+-- Dump completed on 2011-02-11 17:13:42
