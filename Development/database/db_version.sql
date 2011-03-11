@@ -36,7 +36,7 @@ CREATE TABLE `db_version` (
 
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` VALUES ('PSDB WotLK (r361) for 3.3.5a (Core r11234 / SD2 r1990)','ACID 3.0.7 - Full Release for Mangos (3.3.5a Client)',361,NULL);
+INSERT INTO `db_version` VALUES ('PSDB WotLK (r362) for 3.3.5a (Core r11234 / SD2 r1990)','ACID 3.0.7 - Full Release for Mangos (3.3.5a Client)',362,NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2011-03-11 23:24:48
+-- Dump completed on 2011-03-11 23:36:15
