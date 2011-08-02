@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.52, for Win64 (unknown)
+-- MySQL dump 10.11
 --
--- Host: localhost    Database: slk
+-- Host: localhost    Database: mangos
 -- ------------------------------------------------------
--- Server version	5.1.52-community
+-- Server version	5.5.8
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,14 +20,14 @@
 --
 
 DROP TABLE IF EXISTS `game_event_quest`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
 CREATE TABLE `game_event_quest` (
   `quest` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'entry from quest_template',
   `event` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'entry from game_event',
   PRIMARY KEY (`quest`,`event`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Game event system';
-/*!40101 SET character_set_client = @saved_cs_client */;
+SET character_set_client = @saved_cs_client;
 
 --
 -- Dumping data for table `game_event_quest`
@@ -35,7 +35,7 @@ CREATE TABLE `game_event_quest` (
 
 LOCK TABLES `game_event_quest` WRITE;
 /*!40000 ALTER TABLE `game_event_quest` DISABLE KEYS */;
-INSERT INTO `game_event_quest` VALUES (1657,12),(1658,12),(8149,11),(8150,11),(8311,12),(8312,12),(8322,12),(8353,12),(8354,12),(8355,12),(8356,12),(8357,12),(8358,12),(8359,12),(8360,12),(8373,12),(8860,6),(8861,6),(8897,8),(8898,8),(8899,8),(8900,8),(8901,8),(8902,8),(8903,8),(8904,8),(8979,8),(8980,8),(8982,8),(8983,8),(8984,8),(9024,8),(9025,8),(9027,8),(9028,8),(11117,26),(11118,26),(11120,26),(11122,26),(11131,12),(11135,12),(11219,12),(11220,12),(11318,26),(11321,26),(11356,12),(11360,12),(11361,12),(11407,26),(11408,26),(11409,26),(11412,26),(11431,26),(11439,12),(11440,12),(11441,26),(11446,26),(11449,12),(11450,12),(12752,17),(12753,17),(12772,17),(12775,17),(12777,17),(12782,17),(12783,17),(12784,17),(12808,17),(12811,17),(13483,9),(13484,9),(14199,116);
+INSERT INTO `game_event_quest` VALUES (172,10),(1468,10),(1657,12),(1658,12),(8149,11),(8150,11),(8311,12),(8312,12),(8322,12),(8353,12),(8354,12),(8355,12),(8356,12),(8357,12),(8358,12),(8359,12),(8360,12),(8373,12),(8860,6),(8861,6),(8897,8),(8898,8),(8899,8),(8900,8),(8901,8),(8902,8),(8903,8),(8904,8),(8979,8),(8980,8),(8981,8),(8982,8),(8983,8),(8984,8),(8993,8),(9024,8),(9025,8),(9027,8),(9028,8),(10942,10),(10943,10),(10968,10),(11117,26),(11118,26),(11120,26),(11122,26),(11131,12),(11135,12),(11219,12),(11220,12),(11318,26),(11321,26),(11356,12),(11357,12),(11360,12),(11361,12),(11407,26),(11408,26),(11409,26),(11412,26),(11431,26),(11439,12),(11440,12),(11441,26),(11446,26),(11449,12),(11450,12),(11970,1),(11971,1),(12752,17),(12753,17),(12772,17),(12775,17),(12777,17),(12782,17),(12783,17),(12784,17),(12808,17),(12811,17),(13479,28),(13480,28),(13483,28),(13484,28),(13502,28),(13503,28),(14022,37),(14036,37),(24803,24),(24806,24);
 /*!40000 ALTER TABLE `game_event_quest` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-11-03 16:16:19
+-- Dump completed on 2011-04-01 17:04:58
