@@ -1,8 +1,8 @@
--- MySQL dump 10.11
+-- MySQL dump 10.13  Distrib 5.5.16, for Win64 (x86)
 --
--- Host: localhost    Database: mangos
+-- Host: localhost    Database: slk
 -- ------------------------------------------------------
--- Server version	5.5.8
+-- Server version	5.5.16
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,14 +20,14 @@
 --
 
 DROP TABLE IF EXISTS `scripted_event_id`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `scripted_event_id` (
   `id` mediumint(8) NOT NULL,
   `ScriptName` char(64) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Script library scripted events';
-SET character_set_client = @saved_cs_client;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `scripted_event_id`
@@ -35,7 +35,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `scripted_event_id` WRITE;
 /*!40000 ALTER TABLE `scripted_event_id` DISABLE KEYS */;
-INSERT INTO `scripted_event_id` VALUES (11225,'event_taxi_stormcrow'),(2268,'event_spell_altar_boss_aggro'),(2228,'event_spell_altar_boss_aggro'),(8328,'npc_kroshius'),(2488,'event_go_zulfarrak_gong'),(13516,'event_spell_soul_captured_credit'),(13515,'event_spell_soul_captured_credit'),(13514,'event_spell_soul_captured_credit'),(13513,'event_spell_soul_captured_credit'),(5623,'event_spell_gandling_shadow_portal'),(5622,'event_spell_gandling_shadow_portal'),(5621,'event_spell_gandling_shadow_portal'),(5620,'event_spell_gandling_shadow_portal'),(5619,'event_spell_gandling_shadow_portal'),(5618,'event_spell_gandling_shadow_portal'),(3100,'event_antalarion_statue_activation'),(3099,'event_antalarion_statue_activation'),(3098,'event_antalarion_statue_activation'),(3097,'event_antalarion_statue_activation'),(3095,'event_antalarion_statue_activation'),(3094,'event_antalarion_statue_activation'),(8502,'event_avatar_of_hakkar');
+INSERT INTO `scripted_event_id` VALUES (11225,'event_taxi_stormcrow'),(2268,'event_spell_altar_boss_aggro'),(2228,'event_spell_altar_boss_aggro'),(8328,'npc_kroshius'),(2488,'event_go_zulfarrak_gong'),(13516,'event_spell_soul_captured_credit'),(13515,'event_spell_soul_captured_credit'),(13514,'event_spell_soul_captured_credit'),(13513,'event_spell_soul_captured_credit'),(5623,'event_spell_gandling_shadow_portal'),(5622,'event_spell_gandling_shadow_portal'),(5621,'event_spell_gandling_shadow_portal'),(5620,'event_spell_gandling_shadow_portal'),(5619,'event_spell_gandling_shadow_portal'),(5618,'event_spell_gandling_shadow_portal'),(3100,'event_antalarion_statue_activation'),(3099,'event_antalarion_statue_activation'),(3098,'event_antalarion_statue_activation'),(3097,'event_antalarion_statue_activation'),(3095,'event_antalarion_statue_activation'),(3094,'event_antalarion_statue_activation'),(8502,'event_avatar_of_hakkar'),(9735,'event_spell_saronite_barrier');
 /*!40000 ALTER TABLE `scripted_event_id` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2011-06-22 18:43:50
+-- Dump completed on 2011-09-22 22:17:25
