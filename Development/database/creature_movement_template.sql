@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.50, for Win64 (unknown)
+-- MySQL dump 10.11
 --
--- Host: localhost    Database: slk
+-- Host: localhost    Database: mangos
 -- ------------------------------------------------------
--- Server version	5.1.50-community
+-- Server version	5.5.8
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,8 +20,8 @@
 --
 
 DROP TABLE IF EXISTS `creature_movement_template`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
 CREATE TABLE `creature_movement_template` (
   `entry` mediumint(8) unsigned NOT NULL COMMENT 'Creature entry',
   `point` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -43,7 +43,7 @@ CREATE TABLE `creature_movement_template` (
   `model2` mediumint(9) NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`,`point`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature waypoint system';
-/*!40101 SET character_set_client = @saved_cs_client */;
+SET character_set_client = @saved_cs_client;
 
 --
 -- Dumping data for table `creature_movement_template`
@@ -51,6 +51,7 @@ CREATE TABLE `creature_movement_template` (
 
 LOCK TABLES `creature_movement_template` WRITE;
 /*!40000 ALTER TABLE `creature_movement_template` DISABLE KEYS */;
+INSERT INTO `creature_movement_template` VALUES (14241,1,-46.5029,-268.536,-57.4978,0,0,0,0,0,0,0,0,0,0,0,0,0),(14241,2,-10.6115,-281.676,-53.7415,0,0,0,0,0,0,0,0,0,0,0,0,0),(14241,3,17.2824,-286.947,-52.2818,0,0,0,0,0,0,0,0,0,0,0,0,0),(14241,4,74.1724,-272.765,-54.8267,0,0,0,0,0,0,0,0,0,0,0,0,0),(14241,5,117.401,-277.83,-55.8552,30000,14241,0,0,0,0,0,0,0,0,0,0,0);
 /*!40000 ALTER TABLE `creature_movement_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -63,4 +64,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-08-20 22:16:23
+-- Dump completed on 2011-09-22 23:06:13

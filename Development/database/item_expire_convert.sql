@@ -35,7 +35,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `item_expire_convert` WRITE;
 /*!40000 ALTER TABLE `item_expire_convert` DISABLE KEYS */;
-INSERT INTO `item_expire_convert` VALUES (44623,44625),(44625,44627);
+INSERT INTO `item_expire_convert` VALUES (39878,39883),(44623,44625),(44625,44627),(44632,44626),(44626,44629),(44717,44718);
 /*!40000 ALTER TABLE `item_expire_convert` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2011-08-02 21:26:19
+-- Dump completed on 2011-09-22 23:09:40
