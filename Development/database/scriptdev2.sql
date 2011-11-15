@@ -1,6 +1,6 @@
 -- MySQL dump 10.11
 --
--- Host: localhost    Database: scriptdev2
+-- Host: localhost    Database: Scriptdev2
 -- ------------------------------------------------------
 -- Server version	5.5.8
 
@@ -213,4 +213,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2011-09-22 23:12:38
+-- Dump completed on 2011-11-15  0:53:44
