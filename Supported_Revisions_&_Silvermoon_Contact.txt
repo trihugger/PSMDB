@@ -2,7 +2,7 @@
 Supported_Revisions
 --------------------
 - WoW Client v3.3.5.12340
-- MaNGOS r11926 & ScriptDev2 r2478
+- MaNGOS r11985 & ScriptDev2 r2540
 - ACID 3.0.9 + Our Own Event AI
 
 --------
@@ -10,9 +10,9 @@ Contacts
 --------
 PROJECT SILVERMOON WOTLK MANGOS DATABASE
 
-Home Page:	http://project-silvermoon.net/
+Home Page:	http://www.facebook.com/ProjectSilvermoon.net
 SVN: 		http://svn.assembla.com/svn/psmdb_wotlk
-Admin E-mail:	cobra@project-silvermoon.net
+Admin E-mail:	RogerDale360@gmail.com
 Archived Milestones: http://svn.assembla.com/svn/PSDBM/
 
 -------
