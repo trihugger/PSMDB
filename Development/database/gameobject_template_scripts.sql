@@ -49,6 +49,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `gameobject_template_scripts` WRITE;
 /*!40000 ALTER TABLE `gameobject_template_scripts` DISABLE KEYS */;
+INSERT INTO `gameobject_template_scripts` VALUES (179985,1,10,15041,60000,0,0,2,0,0,0,0,0,0,0,0,'Spider Egg - Summon Spawn of Mar\'li'),(179804,1,10,14605,60000,0,0,2,0,0,0,0,0,0,0,0,'Drakonid Bones - Summon Bone Construct');
 /*!40000 ALTER TABLE `gameobject_template_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -61,4 +62,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2012-05-07 19:50:22
+-- Dump completed on 2012-07-11 19:54:15

@@ -2,7 +2,7 @@
 Supported_Revisions
 --------------------
 - WoW Client v3.3.5.12340
-- MaNGOS r11985 & ScriptDev2 r2540
+- MaNGOS r12012 & ScriptDev2 r2625
 - ACID 3.0.9 + Our Own Event AI
 
 --------
@@ -10,9 +10,10 @@ Contacts
 --------
 PROJECT SILVERMOON WOTLK MANGOS DATABASE
 
-Home Page:	http://www.facebook.com/ProjectSilvermoon.net
-SVN: 		http://svn.assembla.com/svn/psmdb_wotlk
-Admin E-mail:	RogerDale360@gmail.com
+Home Page:           http://project-silvermoon.forumotion.com/
+FaceBook Page:	     http://www.facebook.com/ProjectSilvermoon.net
+SVN: 		     http://svn.assembla.com/svn/psmdb_wotlk
+Admin E-mail:	     RogerDale360@gmail.com
 Archived Milestones: http://svn.assembla.com/svn/PSDBM/
 
 -------
@@ -21,9 +22,12 @@ TEAM
 
 Rog360     	- Project Leader
 BrainDedd 	- Database Team
-Hemie143       	- Database Team
-Micks       	- Database Team
+* Hemie143      - Database Team
+* Micks       	- Database Team
 SADraco   	- Database Team
-Bisonte   	- Database Team
-Mephilith 	- Database (Major) Contributor
-Nett            - Database (Major) Contributor
+* Bisonte   	- Database Team
+* Mephilith 	- Database (Major) Contributor
+Nett            - Database Team
+
+
+* - Not Active as 7-1-2012
