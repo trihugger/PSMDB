@@ -36,7 +36,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` VALUES ('PSDB (r374) for 3.3.5a (Core r12012 / SD2 r2625)','ACID 3.0.9 \'Streamlined Perfection\' - Full Release for MaNGOS (3.3.5a Client)',374,NULL);
+INSERT INTO `db_version` VALUES ('PSDB (r375) for 3.3.5a (Core r12012 / SD2 r2651)','ACID 3.0.9 \'Streamlined Perfection\' - Full Release for MaNGOS (3.3.5a Client)',375,NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2012-07-12 19:15:00
+-- Dump completed on 2012-08-06 22:52:23
