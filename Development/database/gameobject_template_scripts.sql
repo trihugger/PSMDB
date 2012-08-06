@@ -49,7 +49,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `gameobject_template_scripts` WRITE;
 /*!40000 ALTER TABLE `gameobject_template_scripts` DISABLE KEYS */;
-INSERT INTO `gameobject_template_scripts` VALUES (179985,1,10,15041,60000,0,0,2,0,0,0,0,0,0,0,0,'Spider Egg - Summon Spawn of Mar\'li'),(179804,1,10,14605,60000,0,0,2,0,0,0,0,0,0,0,0,'Drakonid Bones - Summon Bone Construct');
+INSERT INTO `gameobject_template_scripts` VALUES (179985,1,10,15041,60000,0,0,2,0,0,0,0,0,0,0,0,'Spider Egg - Summon Spawn of Mar\'li'),(179804,1,10,14605,60000,0,0,2,0,0,0,0,0,0,0,0,'Drakonid Bones - Summon Bone Construct'),(178145,0,10,11920,30000,0,0,0,0,0,0,0,0,0,0,0,''),(176581,0,10,11876,30000,0,0,0,0,0,0,0,0,0,0,0,''),(175944,0,10,10882,30000,0,0,0,0,0,0,0,-5008.34,-2118.89,83.657,0.874,''),(182024,0,10,17830,30000,0,0,0,0,0,0,0,-368.557,172.036,-21.784,4.61,''),(182024,1,0,1,0,17830,10,0,2000000012,0,0,0,0,0,0,0,''),(181956,0,10,17716,30000,0,0,0,0,0,0,0,8094.63,-7542.74,151.568,0.287,'');
 /*!40000 ALTER TABLE `gameobject_template_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -62,4 +62,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2012-07-11 19:54:15
+-- Dump completed on 2012-08-06 22:53:15
