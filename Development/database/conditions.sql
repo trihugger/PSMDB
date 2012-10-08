@@ -1,8 +1,8 @@
 -- MySQL dump 10.11
 --
--- Host: localhost    Database: mangos
+-- Host:     Database: mangos
 -- ------------------------------------------------------
--- Server version	5.5.8
+-- Server version	5.5.27
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,8 +20,6 @@
 --
 
 DROP TABLE IF EXISTS `conditions`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
 CREATE TABLE `conditions` (
   `condition_entry` mediumint(8) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Identifier',
   `type` tinyint(3) NOT NULL DEFAULT '0' COMMENT 'Type of the condition',
@@ -30,7 +28,6 @@ CREATE TABLE `conditions` (
   PRIMARY KEY (`condition_entry`),
   UNIQUE KEY `unique_conditions` (`type`,`value1`,`value2`)
 ) ENGINE=MyISAM AUTO_INCREMENT=567 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Condition System';
-SET character_set_client = @saved_cs_client;
 
 --
 -- Dumping data for table `conditions`
@@ -51,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2012-08-06 22:49:57
+-- Dump completed on 2012-10-08 22:50:06

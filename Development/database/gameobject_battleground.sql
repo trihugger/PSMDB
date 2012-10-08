@@ -1,8 +1,8 @@
 -- MySQL dump 10.11
 --
--- Host: localhost    Database: mangos
+-- Host:     Database: mangos
 -- ------------------------------------------------------
--- Server version	5.1.42-community
+-- Server version	5.5.27
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,15 +20,12 @@
 --
 
 DROP TABLE IF EXISTS `gameobject_battleground`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
 CREATE TABLE `gameobject_battleground` (
   `guid` int(10) unsigned NOT NULL COMMENT 'GameObject''s GUID',
   `event1` tinyint(3) unsigned NOT NULL COMMENT 'main event',
   `event2` tinyint(3) unsigned NOT NULL COMMENT 'sub event',
   PRIMARY KEY (`guid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='GameObject battleground indexing system';
-SET character_set_client = @saved_cs_client;
 
 --
 -- Dumping data for table `gameobject_battleground`
@@ -49,4 +46,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-02-01 19:25:41
+-- Dump completed on 2012-10-08 22:50:17

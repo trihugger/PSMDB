@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.30, for Win32 (ia32)
+-- MySQL dump 10.11
 --
--- Host: localhost    Database: slk
+-- Host:     Database: mangos
 -- ------------------------------------------------------
--- Server version	5.1.30
+-- Server version	5.5.27
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,8 +20,6 @@
 --
 
 DROP TABLE IF EXISTS `player_levelstats`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
 CREATE TABLE `player_levelstats` (
   `race` tinyint(3) unsigned NOT NULL,
   `class` tinyint(3) unsigned NOT NULL,
@@ -29,11 +27,10 @@ CREATE TABLE `player_levelstats` (
   `str` tinyint(3) unsigned NOT NULL,
   `agi` tinyint(3) unsigned NOT NULL,
   `sta` tinyint(3) unsigned NOT NULL,
-  `inte` smallint(5) unsigned NOT NULL,
+  `inte` tinyint(3) unsigned NOT NULL,
   `spi` tinyint(3) unsigned NOT NULL,
   PRIMARY KEY (`race`,`class`,`level`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 PACK_KEYS=0 COMMENT='Stores levels stats.';
-SET character_set_client = @saved_cs_client;
 
 --
 -- Dumping data for table `player_levelstats`
@@ -54,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2008-12-24 12:08:19
+-- Dump completed on 2012-10-08 22:50:23
