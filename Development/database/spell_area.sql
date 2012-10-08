@@ -1,8 +1,8 @@
 -- MySQL dump 10.11
 --
--- Host: localhost    Database: mangos
+-- Host:     Database: mangos
 -- ------------------------------------------------------
--- Server version	5.1.42-community
+-- Server version	5.5.27
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,8 +20,6 @@
 --
 
 DROP TABLE IF EXISTS `spell_area`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
 CREATE TABLE `spell_area` (
   `spell` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `area` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -34,7 +32,6 @@ CREATE TABLE `spell_area` (
   `autocast` tinyint(1) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`spell`,`area`,`quest_start`,`quest_start_active`,`aura_spell`,`racemask`,`gender`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-SET character_set_client = @saved_cs_client;
 
 --
 -- Dumping data for table `spell_area`
@@ -55,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2011-01-17 20:36:11
+-- Dump completed on 2012-10-08 22:50:26

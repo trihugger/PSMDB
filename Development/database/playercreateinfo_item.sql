@@ -1,8 +1,8 @@
 -- MySQL dump 10.11
 --
--- Host: localhost    Database: slk
+-- Host:     Database: mangos
 -- ------------------------------------------------------
--- Server version	5.0.67
+-- Server version	5.5.27
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,16 +20,13 @@
 --
 
 DROP TABLE IF EXISTS `playercreateinfo_item`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
 CREATE TABLE `playercreateinfo_item` (
-  `race` tinyint(3) unsigned NOT NULL default '0',
-  `class` tinyint(3) unsigned NOT NULL default '0',
-  `itemid` mediumint(8) unsigned NOT NULL default '0',
-  `amount` tinyint(3) unsigned NOT NULL default '1',
+  `race` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `class` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `itemid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `amount` tinyint(3) unsigned NOT NULL DEFAULT '1',
   KEY `playercreateinfo_race_class_index` (`race`,`class`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-SET character_set_client = @saved_cs_client;
 
 --
 -- Dumping data for table `playercreateinfo_item`
@@ -49,4 +46,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2008-12-02 18:45:04
+-- Dump completed on 2012-10-08 22:50:23

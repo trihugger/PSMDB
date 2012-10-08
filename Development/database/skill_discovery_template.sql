@@ -1,8 +1,8 @@
 -- MySQL dump 10.11
 --
--- Host: localhost    Database: mangos
+-- Host:     Database: mangos
 -- ------------------------------------------------------
--- Server version	5.1.42-community
+-- Server version	5.5.27
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,8 +20,6 @@
 --
 
 DROP TABLE IF EXISTS `skill_discovery_template`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
 CREATE TABLE `skill_discovery_template` (
   `spellId` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'SpellId of the discoverable spell',
   `reqSpell` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'spell requirement',
@@ -29,7 +27,6 @@ CREATE TABLE `skill_discovery_template` (
   `chance` float NOT NULL DEFAULT '0' COMMENT 'chance to discover',
   PRIMARY KEY (`spellId`,`reqSpell`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Skill Discovery System';
-SET character_set_client = @saved_cs_client;
 
 --
 -- Dumping data for table `skill_discovery_template`
@@ -50,4 +47,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-05-17 18:18:43
+-- Dump completed on 2012-10-08 22:50:26

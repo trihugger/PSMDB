@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.9, for Win64 (x86)
+-- MySQL dump 10.11
 --
--- Host: localhost    Database: slk
+-- Host:     Database: mangos
 -- ------------------------------------------------------
--- Server version	5.5.9
+-- Server version	5.5.27
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,8 +20,6 @@
 --
 
 DROP TABLE IF EXISTS `pool_creature_template`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pool_creature_template` (
   `id` int(10) unsigned NOT NULL DEFAULT '0',
   `pool_entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -30,7 +28,6 @@ CREATE TABLE `pool_creature_template` (
   PRIMARY KEY (`id`),
   KEY `pool_idx` (`pool_entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `pool_creature_template`
@@ -50,4 +47,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2011-02-26 22:44:01
+-- Dump completed on 2012-10-08 22:50:23

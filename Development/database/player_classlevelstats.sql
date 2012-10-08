@@ -1,8 +1,8 @@
 -- MySQL dump 10.11
 --
--- Host: localhost    Database: mangos
+-- Host:     Database: mangos
 -- ------------------------------------------------------
--- Server version	5.1.32-community
+-- Server version	5.5.27
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,8 +20,6 @@
 --
 
 DROP TABLE IF EXISTS `player_classlevelstats`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
 CREATE TABLE `player_classlevelstats` (
   `class` tinyint(3) unsigned NOT NULL,
   `level` tinyint(3) unsigned NOT NULL,
@@ -29,7 +27,6 @@ CREATE TABLE `player_classlevelstats` (
   `basemana` smallint(5) unsigned NOT NULL,
   PRIMARY KEY (`class`,`level`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 PACK_KEYS=0 COMMENT='Stores levels stats.';
-SET character_set_client = @saved_cs_client;
 
 --
 -- Dumping data for table `player_classlevelstats`
@@ -50,4 +47,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-11-23 19:22:31
+-- Dump completed on 2012-10-08 22:50:23

@@ -1,8 +1,8 @@
 -- MySQL dump 10.11
 --
--- Host: localhost    Database: mangos
+-- Host:     Database: mangos
 -- ------------------------------------------------------
--- Server version	5.5.8
+-- Server version	5.5.27
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,8 +20,6 @@
 --
 
 DROP TABLE IF EXISTS `creature_ai_summons`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
 CREATE TABLE `creature_ai_summons` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Location Identifier',
   `position_x` float NOT NULL DEFAULT '0',
@@ -32,7 +30,6 @@ CREATE TABLE `creature_ai_summons` (
   `comment` varchar(255) NOT NULL DEFAULT '' COMMENT 'Summon Comment',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1236 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Summoning Locations';
-SET character_set_client = @saved_cs_client;
 
 --
 -- Dumping data for table `creature_ai_summons`
@@ -53,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2012-09-13  1:54:28
+-- Dump completed on 2012-10-08 22:50:09

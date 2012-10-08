@@ -1,8 +1,8 @@
 -- MySQL dump 10.11
 --
--- Host: localhost    Database: mangos
+-- Host:     Database: mangos
 -- ------------------------------------------------------
--- Server version	5.0.45-community-nt-log
+-- Server version	5.5.27
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,16 +20,13 @@
 --
 
 DROP TABLE IF EXISTS `pet_name_generation`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
 CREATE TABLE `pet_name_generation` (
-  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
   `word` tinytext NOT NULL,
-  `entry` mediumint(8) unsigned NOT NULL default '0',
-  `half` tinyint(4) NOT NULL default '0',
-  PRIMARY KEY  (`id`)
+  `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `half` tinyint(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=314 DEFAULT CHARSET=utf8;
-SET character_set_client = @saved_cs_client;
 
 --
 -- Dumping data for table `pet_name_generation`
@@ -50,4 +47,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-02-11  2:42:36
+-- Dump completed on 2012-10-08 22:50:23
