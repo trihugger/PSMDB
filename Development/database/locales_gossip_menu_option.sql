@@ -1,4 +1,4 @@
--- MySQL dump 10.11
+-- MySQL dump 10.13  Distrib 5.5.27, for Win32 (x86)
 --
 -- Host:     Database: mangos
 -- ------------------------------------------------------
@@ -20,6 +20,8 @@
 --
 
 DROP TABLE IF EXISTS `locales_gossip_menu_option`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `locales_gossip_menu_option` (
   `menu_id` smallint(6) unsigned NOT NULL DEFAULT '0',
   `id` smallint(6) unsigned NOT NULL DEFAULT '0',
@@ -41,6 +43,7 @@ CREATE TABLE `locales_gossip_menu_option` (
   `box_text_loc8` text,
   PRIMARY KEY (`menu_id`,`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `locales_gossip_menu_option`
@@ -60,4 +63,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2012-10-08 22:50:21
+-- Dump completed on 2012-11-13  1:21:14
