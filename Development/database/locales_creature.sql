@@ -1,4 +1,4 @@
--- MySQL dump 10.11
+-- MySQL dump 10.13  Distrib 5.5.27, for Win32 (x86)
 --
 -- Host:     Database: mangos
 -- ------------------------------------------------------
@@ -20,6 +20,8 @@
 --
 
 DROP TABLE IF EXISTS `locales_creature`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `locales_creature` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `name_loc1` varchar(100) NOT NULL DEFAULT '',
@@ -40,6 +42,7 @@ CREATE TABLE `locales_creature` (
   `subname_loc8` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `locales_creature`
@@ -59,4 +62,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2012-10-08 22:50:21
+-- Dump completed on 2012-11-13  1:21:14

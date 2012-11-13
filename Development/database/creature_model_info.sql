@@ -1,4 +1,4 @@
--- MySQL dump 10.11
+-- MySQL dump 10.13  Distrib 5.5.27, for Win32 (x86)
 --
 -- Host:     Database: mangos
 -- ------------------------------------------------------
@@ -20,6 +20,8 @@
 --
 
 DROP TABLE IF EXISTS `creature_model_info`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `creature_model_info` (
   `modelid` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `bounding_radius` float NOT NULL DEFAULT '0',
@@ -29,6 +31,7 @@ CREATE TABLE `creature_model_info` (
   `modelid_alternative` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`modelid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Creature System (Model related info)';
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `creature_model_info`
@@ -49,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2012-10-08 22:50:13
+-- Dump completed on 2012-11-13  1:21:05

@@ -1,4 +1,4 @@
--- MySQL dump 10.11
+-- MySQL dump 10.13  Distrib 5.5.27, for Win32 (x86)
 --
 -- Host:     Database: mangos
 -- ------------------------------------------------------
@@ -20,12 +20,15 @@
 --
 
 DROP TABLE IF EXISTS `db_version`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `db_version` (
   `version` varchar(120) DEFAULT NULL,
   `creature_ai_version` varchar(120) DEFAULT NULL,
   `cache_id` int(10) DEFAULT '0',
-  `required_12189_01_mangos_creature_template_spells` bit(1) DEFAULT NULL
+  `required_12235_01_mangos_mangos_string` bit(1) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Used DB version notes';
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `db_version`
@@ -33,7 +36,7 @@ CREATE TABLE `db_version` (
 
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` VALUES ('PSDB (r377) for 3.3.5a (Core r12189 / SD2 r2731)','ACID 3.1.0 \'Another Wild Adventure\' - Full Release for MaNGOS (3.3.5a Client)',377,NULL);
+INSERT INTO `db_version` VALUES ('PSDB (r378) for 3.3.5a (Core r12235 / SD2 r2751)','ACID 3.1.0 \'Another Wild Adventure\' - Full Release for MaNGOS (3.3.5a Client)',378,NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -46,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2012-10-08 22:50:15
+-- Dump completed on 2012-11-13  1:21:08
