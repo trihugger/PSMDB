@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.27, for Win32 (x86)
+-- MySQL dump 10.13  Distrib 5.6.10, for Win32 (x86)
 --
 -- Host:     Database: mangos
 -- ------------------------------------------------------
--- Server version	5.5.27
+-- Server version	5.6.10
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -28,6 +28,7 @@ CREATE TABLE `npc_vendor_template` (
   `maxcount` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `incrtime` int(10) unsigned NOT NULL DEFAULT '0',
   `ExtendedCost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `condition_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`,`item`,`ExtendedCost`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Npc System';
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -50,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-01-07 16:01:13
+-- Dump completed on 2013-03-11 20:32:41
