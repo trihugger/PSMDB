@@ -51,6 +51,7 @@ CREATE TABLE `locales_gossip_menu_option` (
 
 LOCK TABLES `locales_gossip_menu_option` WRITE;
 /*!40000 ALTER TABLE `locales_gossip_menu_option` DISABLE KEYS */;
+INSERT INTO `locales_gossip_menu_option` VALUES (10638,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'I no longer want to obtain experience.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'You are assured that you do want to forego obtaining of experience?'),(10638,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'I want again to begin to obtain experience.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'You are assured that you do want to again obtain experience?');
 /*!40000 ALTER TABLE `locales_gossip_menu_option` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -63,4 +64,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-03-11 20:32:39
+-- Dump completed on 2013-05-13 13:49:25
