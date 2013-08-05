@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Copyright (C) 2005-2012 MaNGOS project <http://getmangos.com/>
+# This file is part of the CMaNGOS Project. See AUTHORS file for Copyright information
 #
 # This file is free software; as a special exception the author gives
 # unlimited permission to copy and/or distribute it, with or without
