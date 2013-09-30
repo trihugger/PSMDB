@@ -2,7 +2,7 @@
 --
 -- Host:     Database: mangos
 -- ------------------------------------------------------
--- Server version	5.6.10
+-- Server version	5.6.13
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -24,7 +24,7 @@ DROP TABLE IF EXISTS `game_event_gameobject`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `game_event_gameobject` (
   `guid` int(10) unsigned NOT NULL,
-  `event` smallint(6) NOT NULL DEFAULT '0' COMMENT 'Put negatives values to remove during event',
+  `event` smallint(6) NOT NULL DEFAULT '0' COMMENT 'Negatives value to remove during event and ignore pool grouping, positive value for spawn during event and if guid is part of pool then al pool memebers must be listed as part of event spawn.',
   PRIMARY KEY (`guid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-08-05 15:51:37
+-- Dump completed on 2013-09-30 13:58:48

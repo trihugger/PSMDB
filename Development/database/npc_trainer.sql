@@ -2,7 +2,7 @@
 --
 -- Host:     Database: mangos
 -- ------------------------------------------------------
--- Server version	5.6.10
+-- Server version	5.6.13
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -29,7 +29,7 @@ CREATE TABLE `npc_trainer` (
   `reqskill` smallint(5) unsigned NOT NULL DEFAULT '0',
   `reqskillvalue` smallint(5) unsigned NOT NULL DEFAULT '0',
   `reqlevel` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`entry`,`spell`)
+  UNIQUE KEY `entry_spell` (`entry`,`spell`) USING BTREE
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -53,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-08-05 15:51:44
+-- Dump completed on 2013-09-30 13:58:58

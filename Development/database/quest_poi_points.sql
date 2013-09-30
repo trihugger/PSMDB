@@ -2,7 +2,7 @@
 --
 -- Host:     Database: mangos
 -- ------------------------------------------------------
--- Server version	5.6.10
+-- Server version	5.6.13
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -24,7 +24,7 @@ DROP TABLE IF EXISTS `quest_poi_points`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `quest_poi_points` (
   `questId` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `poiId` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `poiId` tinyint(3) NOT NULL DEFAULT '0',
   `x` int(11) NOT NULL DEFAULT '0',
   `y` int(11) NOT NULL DEFAULT '0',
   KEY `idx_poip` (`questId`,`poiId`)
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-08-05 15:51:46
+-- Dump completed on 2013-09-30 13:59:01
