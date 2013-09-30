@@ -2,7 +2,7 @@
 --
 -- Host:     Database: mangos
 -- ------------------------------------------------------
--- Server version	5.6.10
+-- Server version	5.6.13
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -28,8 +28,8 @@ CREATE TABLE `dbscripts_on_spell` (
   `command` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `datalong` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `datalong2` int(10) unsigned NOT NULL DEFAULT '0',
-  `buddy_entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `search_radius` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `buddy_entry` int(10) unsigned NOT NULL DEFAULT '0',
+  `search_radius` int(10) unsigned NOT NULL DEFAULT '0',
   `data_flags` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `dataint` int(11) NOT NULL DEFAULT '0',
   `dataint2` int(11) NOT NULL DEFAULT '0',
@@ -62,4 +62,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-08-05 15:51:36
+-- Dump completed on 2013-09-30 13:58:48
