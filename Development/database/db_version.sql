@@ -36,7 +36,7 @@ CREATE TABLE `db_version` (
 
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` VALUES ('PSDB (r386) for 3.3.5a (Core r12562/SD2 r2979)','ACID 3.1.0 \'Another Wild Adventure\' - Full Release for CMaNGOS-WOTLK (3.3.5a Client)',386,NULL);
+INSERT INTO `db_version` VALUES ('PSDB (r387) for 3.3.5a (Core r12562/SD2 r2982)','ACID 3.2.0 \'Let The Show Carry On!\' - Full Release for CMaNGOS-WOTLK (3.3.5a Client)',387,NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-11-13 17:20:02
+-- Dump completed on 2013-12-16 23:25:22
