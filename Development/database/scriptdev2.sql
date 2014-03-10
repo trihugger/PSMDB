@@ -168,7 +168,7 @@ CREATE TABLE `sd2_db_version` (
 
 LOCK TABLES `sd2_db_version` WRITE;
 /*!40000 ALTER TABLE `sd2_db_version` DISABLE KEYS */;
-INSERT INTO `sd2_db_version` VALUES ('ScriptDev2 (for CMaNGOS 12550+) ');
+INSERT INTO `sd2_db_version` VALUES ('ScriptDev2 (for CMaNGOS 12587+) ');
 /*!40000 ALTER TABLE `sd2_db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -181,4 +181,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-12-16 23:25:41
+-- Dump completed on 2014-03-10  7:59:27
