@@ -26,7 +26,7 @@ CREATE TABLE `db_version` (
   `version` varchar(120) DEFAULT NULL,
   `creature_ai_version` varchar(120) DEFAULT NULL,
   `cache_id` int(10) DEFAULT '0',
-  `required_12562_01_mangos_playercreateinfo_action` bit(1) DEFAULT NULL
+  `required_12615_01_mangos_creature_template_classlevelstats` bit(1) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Used DB version notes';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -36,7 +36,7 @@ CREATE TABLE `db_version` (
 
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` VALUES ('PSDB (r388) for 3.3.5a (Core r12562/SD2 r2984)','ACID 3.2.0 \'Let The Show Carry On!\' - Full Release for CMaNGOS-WOTLK (3.3.5a Client)',388,NULL);
+INSERT INTO `db_version` VALUES ('PSDB (r389) for 3.3.5a (Core r12615/SD2 r3000)','ACID 3.2.0 \'Let The Show Carry On!\' - Full Release for CMaNGOS-WOTLK (3.3.5a Client)',389,NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-03-10  7:59:09
+-- Dump completed on 2014-04-13 21:32:45
