@@ -2,8 +2,8 @@
 Supported_Revisions
 --------------------
 - WoW Client v3.3.5.12340
-- MaNGOS r12670 & ScriptDev2 r3016
-- ACID 3.2.0 + Our Own Event AI
+- MaNGOS r12748 & ScriptDev2 r3050
+- ACID's Latest + Our Own Event AI
 
 --------
 Contacts
