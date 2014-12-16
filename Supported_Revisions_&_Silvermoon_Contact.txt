@@ -2,7 +2,7 @@
 Supported_Revisions
 --------------------
 - WoW Client v3.3.5.12340
-- MaNGOS r12748 & ScriptDev2 r3050
+- CMaNGOS r12759 & ScriptDev2 r3071
 - ACID's Latest + Our Own Event AI
 
 --------
@@ -22,12 +22,33 @@ TEAM
 
 Rog360     	- Project Leader
 * BrainDedd 	- Database Team
-* Hemie143      - Database Team
+* Hemie143          - Database Team
 * Micks       	- Database Team
 SADraco   	- Database Team
 * Bisonte   	- Database Team
 * Mephilith 	- Database (Major) Contributor
-Nett            - Database Team
-
+Nett                    - Database Team
 
 * - Not Active as 7-1-2012
+
+
+---------------------------
+PSDB_Installer Normal Install
+---------------------------
+Normal Install replaces your Mangos, Characters & SD2 databases.
+
+1. Execute PSDB_Installer.bat
+2. Insert your MySQL Password.
+3. Done!
+
+--------------------------
+PSDB_Installer Quick Install
+--------------------------
+Quick re-install only replace Mangos and SD2 databases.
+
+1. Open PSDB_Installer.bat file with any text editor and Change "set quick=on" & "set pass=[MySQL Pass]".
+2. Execute PSDB_Installer.bat
+3. Done!
+
+* Make sure you update your databases, If you using higher Revision of CMangos or SD2 than Supported Above.
+* Make sure you name your databases "mangos" , "characters" & "scriptdev2" or edit them in PSDB_Installer.bat.
