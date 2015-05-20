@@ -2,7 +2,7 @@
 Supported_Revisions
 --------------------
 - WoW Client v3.3.5.12340
-- CMaNGOS r12759 & ScriptDev2 r3071
+- CMaNGOS r12864 & ScriptDev2 r3139
 - ACID's Latest + Our Own Event AI
 
 --------
