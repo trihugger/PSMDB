@@ -1,7 +1,7 @@
 @echo off
 :quick
 rem Quick install section
-rem This will automatically use the variables below to install the world and scriptdev2 databases without prompting then optimize them and exit
+rem This will automatically use the variables below to install the world database without prompting,optimize it, and exit.
 rem To use: Set your environment variables below and change 'set quick=off' to 'set quick=on' 
 set quick=off
 if %quick% == off goto standard
@@ -12,7 +12,6 @@ set user=root
 set pass=
 set port=3306
 set wdb=mangos
-set sd2db=scriptdev2
 rem -- Don't change past this point --
 set yesno=y
 goto install
@@ -42,8 +41,6 @@ set /p port=What is your MySQL port?                [3306]        :
 if %port%. == . set port=3306
 set /p wdb=What is your World database name?       [mangos]      : 
 if %wdb%. == . set wdb=mangos
-set /p sd2db=What is your ScriptDev2 database name?  [scriptdev2]  : 
-if %sd2db%. == . set sd2db=scriptdev2
 set /p cdb=What is your Characters database name?  [characters]  : 
 if %cdb%. == . set cdb=characters
 set /p rdb=What is your Realmd database name?      [realmd]      : 
@@ -55,9 +52,9 @@ set optim=Tools\DB_Optimizer
 set mysql=.
 
 :checkpaths
-if not exist %dbpath% then goto patherror
-if not exist %optim% then goto patherror
-if not exist %mysql%\mysql.exe then goto patherror
+if not exist %dbpath% goto patherror
+if not exist %optim% goto patherror
+if not exist %mysql%\mysql.exe goto patherror
 goto world
 
 :patherror
@@ -70,23 +67,12 @@ goto :eof
 if %quick% == off echo.
 if %quick% == off echo This will wipe out your current World database and replace it.
 if %quick% == off set /p yesno=Do you wish to continue? (y/n) 
-if %quick% == off if %yesno% neq y if %yesno% neq Y goto sd2
+if %quick% == off if %yesno% neq y if %yesno% neq Y goto characters
 
 echo.
 echo Importing World database
 
-for %%i in (%dbpath%\*.sql) do if %%i neq %dbpath%\scriptdev2.sql if %%i neq %dbpath%\characters.sql if %%i neq %dbpath%\realmd.sql echo %%i & %mysql%\mysql -q -s -h %svr% --user=%user% --password=%pass% --port=%port% %wdb% < %%i
-
-:sd2
-if %quick% == off echo.
-if %quick% == off echo This will wipe out your current ScriptDev2 database and replace it.
-if %quick% == off set /p yesno=Do you wish to continue? (y/n) 
-if %quick% == off if %yesno% neq y if %yesno% neq Y goto characters
-
-echo.
-echo Importing ScriptDev2 database
-
-%mysql%\mysql -q -s -h %svr% --user=%user% --password=%pass% --port=%port% %sd2db% < %dbpath%\scriptdev2.sql
+for %%i in (%dbpath%\*.sql) do if %%i neq %dbpath%\characters.sql if %%i neq %dbpath%\realmd.sql echo %%i & %mysql%\mysql -q -s -h %svr% --user=%user% --password=%pass% --port=%port% %wdb% < %%i
 
 if %quick% neq off goto optimize
 
@@ -122,13 +108,10 @@ echo.
 echo Optimizing database
 
 %optim%\Optimizer.exe
-copy %optim%\scriptdev2_optimize.sql . >nul
+copy %optim%\optimize.sql . >nul
 echo World
 %mysql%\mysql -q -s -h %svr% --user=%user% --password=%pass% --port=%port% %wdb% < optimize.sql >nul
-echo ScriptDev2
-%mysql%\mysql -q -s -h %svr% --user=%user% --password=%pass% --port=%port% %sd2db% < scriptdev2_optimize.sql >nul
 del optimize.sql
-del scriptdev2_optimize.sql
 
 if %quick% neq off goto :eof
 
