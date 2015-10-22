@@ -2,7 +2,7 @@
 Supported_Revisions
 --------------------
 - WoW Client v3.3.5.12340
-- CMaNGOS r12864 & ScriptDev2 r3139
+- CMaNGOS/SD2 12938
 - ACID's Latest + Our Own Event AI
 
 --------
@@ -35,20 +35,20 @@ Nett                    - Database Team
 ---------------------------
 PSDB_Installer Normal Install
 ---------------------------
-Normal Install replaces your Mangos, Characters & SD2 databases.
+Normal Install replaces your Mangos, Characters & Realm databases.
 
 1. Execute PSDB_Installer.bat
-2. Insert your MySQL Password.
+2. Insert your MySQL Info.
 3. Done!
 
 --------------------------
 PSDB_Installer Quick Install
 --------------------------
-Quick re-install only replace Mangos and SD2 databases.
+Quick re-install will only replace your Mangos database.
 
 1. Open PSDB_Installer.bat file with any text editor and Change "set quick=on" & "set pass=[MySQL Pass]".
 2. Execute PSDB_Installer.bat
 3. Done!
 
-* Make sure you update your databases, If you using higher Revision of CMangos or SD2 than Supported Above.
-* Make sure you name your databases "mangos" , "characters" & "scriptdev2" or edit them in PSDB_Installer.bat.
+* Make sure you update your databases, If you using higher Revision of CMangos than Supported Above.
+* Make sure you name your databases "mangos" "Realmd" & "characters" or Edit them in the PSDB_Installer.
