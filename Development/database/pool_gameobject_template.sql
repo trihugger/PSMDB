@@ -38,6 +38,7 @@ CREATE TABLE `pool_gameobject_template` (
 
 LOCK TABLES `pool_gameobject_template` WRITE;
 /*!40000 ALTER TABLE `pool_gameobject_template` DISABLE KEYS */;
+INSERT INTO `pool_gameobject_template` VALUES (161557,25517,0,'Go161557 - Milly\'s Harvest'),(175966,293,0,'Go175966 - Enchanted Scarlet Thread'),(185939,292,0,'Go185939 - Nethermine Cargo'),(182355,291,0,'Go182355 - Shadow Council Armaments'),(184716,301,0,'Go184716 - Coilskar Chest'),(187901,296,0,'Go187901 - Fizzcrank Spare Parts'),(187900,297,0,'Go187900 - Fizzcrank Spare Parts'),(187899,298,0,'Go187899 - Fizzcrank Spare Parts'),(187898,299,0,'Go187898 - Fizzcrank Spare Parts'),(187897,300,0,'Go187897 - Fizzcrank Spare Parts'),(157936,295,0,'Go175785 - Un\'Goro Dirt Pile'),(175785,294,0,'Go175785 - Inconspicuous Documents'),(176793,302,0,'Go176793 - Bundle of Wood');
 /*!40000 ALTER TABLE `pool_gameobject_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-10-22 17:07:12
+-- Dump completed on 2016-01-19 18:54:37
