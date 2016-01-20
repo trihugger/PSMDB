@@ -2,7 +2,7 @@
 Supported_Revisions
 --------------------
 - WoW Client v3.3.5.12340
-- CMaNGOS/SD2 12938
+- CMaNGOS0.18 (2016-1-6)
 - ACID's Latest + Our Own Event AI
 
 --------
